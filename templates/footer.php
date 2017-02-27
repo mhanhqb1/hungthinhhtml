@@ -1,7 +1,7 @@
         <div id="footer">
             <div class="footer">
                 <div class="footer-logo"> 
-                    <img alt="" src="/hungthinh/templates/img/footer_logo.png" width="45" height="55"> 
+                    <img alt="" src="<?php echo BASE_URL;?>/templates/img/footer_logo.png" width="45" height="55"> 
                 </div> 
                 <div class="footer-links"> 
                     <ul> 

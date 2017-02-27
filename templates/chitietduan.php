@@ -10,7 +10,17 @@
                                 <div class="breadcrumb">
                                     <div id="ctl00_cprContent_TFA24BDA5003_ctl00_ctl00_Breadcrumb" class="RadSiteMap RadSiteMap_">
                                         <ul class="rsmFlow rsmLevel rsmOneLevel">
-                                            <li class="rsmItem sfBreadcrumbNavigation"><a class="rsmLink" href="../../home" title="CapitaLand là một trong những tập đoàn bất động sản lớn nhất Châu Á. Được niêm yết với trụ sở chính tại Singapore">Trang chủ</a><img src="/theme/images/arrow.png"></li> <li class="rsmItem sfBreadcrumbNavigation"><a class="rsmLink" href="../../our-projects">Dự án</a><img src="/theme/images/arrow.png"></li> <li class="rsmItem sfNoBreadcrumbNavigation"><a class="rsmLink" href="javascript: void(0)" title="Hochiminh">TP. HỒ CHÍ MINH</a></li>
+                                            <li class="rsmItem sfBreadcrumbNavigation">
+                                                <a class="rsmLink" href="../../home" title="CapitaLand là một trong những tập đoàn bất động sản lớn nhất Châu Á. Được niêm yết với trụ sở chính tại Singapore">Trang chủ</a>
+                                                <img src="<?php echo BASE_URL;?>/templates/img/arrow.png">
+                                            </li> 
+                                            <li class="rsmItem sfBreadcrumbNavigation">
+                                                <a class="rsmLink" href="../../our-projects">Dự án</a>
+                                                <img src="<?php echo BASE_URL;?>/templates/img/arrow.png">
+                                            </li> 
+                                            <li class="rsmItem sfNoBreadcrumbNavigation">
+                                                <a class="rsmLink" href="javascript: void(0)" title="Hochiminh">TP. HỒ CHÍ MINH</a>
+                                            </li>
                                         </ul>
                                         <input id="ctl00_cprContent_TFA24BDA5003_ctl00_ctl00_Breadcrumb_ClientState" name="ctl00_cprContent_TFA24BDA5003_ctl00_ctl00_Breadcrumb_ClientState" type="hidden" />
                                     </div>
@@ -99,9 +109,9 @@
 
                                         <div class="tabRowDiv">
                                             <div id="rowOverview_content" class="tabContentDiv" style="display: block;">
-                                                <script src="/hungthinh/templates/js/jssor.core.js"></script>
-                                                <script src="/hungthinh/templates/js/jssor.utils.js"></script>
-                                                <script src="/hungthinh/templates/js/jssor.slider.js"></script>
+                                                <script src="<?php echo BASE_URL;?>/templates/js/jssor.core.js"></script>
+                                                <script src="<?php echo BASE_URL;?>/templates/js/jssor.utils.js"></script>
+                                                <script src="<?php echo BASE_URL;?>/templates/js/jssor.slider.js"></script>
                                                 <!--<script type="text/javascript" src="/theme/js/jssor.slider.js"></script>-->
                                                 <script>
                                                     jQuery(document).ready(function ($) {
@@ -199,7 +209,7 @@
                                                         <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
                                                              background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
                                                         </div>
-                                                        <div style="position: absolute; display: block; background: url(/theme/images/loading.gif) no-repeat center center;
+                                                        <div style="position: absolute; display: block; background: url(<?php echo BASE_URL;?>/templates/img/loading.gif) no-repeat center center;
                                                              top: 0px; left: 0px;width: 100%;height:100%;">
                                                         </div>
                                                     </div>
@@ -428,9 +438,9 @@
                                     </li>                                        
 
                                 </ul>
-                            </div><div class='contactmenu'><div class="custom phone" style="padding: 8px 12px;"> <p><span><img alt="" src="/theme/images/General_Inquiries.png" style="border-width: 0px; border-style: solid;" />&nbsp;&nbsp; Th&ocirc;ng tin chung :<br />
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 84-08 3519 1067</span></p> <p><span><img alt="" src="/theme/images/Sale.png" style="border-width: 0px; border-style: solid;" />&nbsp;&nbsp;&nbsp; Ph&ograve;ng Kinh Doanh :<br />
-                                            &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; 1800 599 986<br /> </span></p> <p><span><img alt="" src="/theme/images/Customer_Relation.png" style="border-width: 0px; border-style: solid;" />&nbsp; Ph&ograve;ng Kh&aacute;ch H&agrave;ng :</span><span></span></p> <p><span>08-35194504 (HCMC)</span></p> <p><span>04-39393232 ext:200 (Hanoi)</span></p> <p><span>65-67133222 (Singapore)</span> <span> </span> </p> </div> <p> </p>
+                            </div><div class='contactmenu'><div class="custom phone" style="padding: 8px 12px;"> <p><span><img alt="" src="<?php echo BASE_URL;?>/templates/img/General_Inquiries.png" style="border-width: 0px; border-style: solid;" />&nbsp;&nbsp; Th&ocirc;ng tin chung :<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 84-08 3519 1067</span></p> <p><span><img alt="" src="<?php echo BASE_URL;?>/templates/img/Sale.png" style="border-width: 0px; border-style: solid;" />&nbsp;&nbsp;&nbsp; Ph&ograve;ng Kinh Doanh :<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; 1800 599 986<br /> </span></p> <p><span><img alt="" src="<?php echo BASE_URL;?>/templates/img/Customer_Relation.png" style="border-width: 0px; border-style: solid;" />&nbsp; Ph&ograve;ng Kh&aacute;ch H&agrave;ng :</span><span></span></p> <p><span>08-35194504 (HCMC)</span></p> <p><span>04-39393232 ext:200 (Hanoi)</span></p> <p><span>65-67133222 (Singapore)</span> <span> </span> </p> </div> <p> </p>
 
 
                             </div>            

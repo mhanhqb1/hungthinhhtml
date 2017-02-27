@@ -4,9 +4,9 @@
             <div id="cprContent_T979D2F30002_Col00" class="sf_colsIn sf_1col_1in_100"><div class="sf_cols">
                     <div class="sf_colsOut homeleft">
                         <div id="cprContent_T979D2F30003_Col00" class="sf_colsIn sf_2cols_1in_75"><div id="cprContent_T979D2F30004" class="homebanner">
-                                <script src="/hungthinh/templates/js/jssor.core.js"></script>
-                                <script src="/hungthinh/templates/js/jssor.utils.js"></script>
-                                <script src="/hungthinh/templates/js/jssor.slider.js"></script>
+                                <script src="<?php echo BASE_URL;?>/templates/js/jssor.core.js"></script>
+                                <script src="<?php echo BASE_URL;?>/templates/js/jssor.utils.js"></script>
+                                <script src="<?php echo BASE_URL;?>/templates/js/jssor.slider.js"></script>
                                 <script>
                                     jQuery(document).ready(function ($) {
                                         var options = {
@@ -134,47 +134,47 @@
                                     <li>
                                         <a href="https://www.facebook.com/capitalandvietnamofficial/?pnref=story" target="_blank">
                                             <span data-sfref="[images|OpenAccessDataProvider]93d711d6-e855-6b4a-a72f-ff000008fdb8" class="sfImageWrapper">
-                                                <img src="/hungthinh/templates/img/icon-facebook.png" alt="Facebook CapitaLand Vietnam" style="border-width: 0px; border-style: solid;" displaymode="Original" title="icon-facebook">
+                                                <img src="<?php echo BASE_URL;?>/templates/img/icon-facebook.png" alt="Facebook CapitaLand Vietnam" style="border-width: 0px; border-style: solid;" displaymode="Original" title="icon-facebook">
                                             </span>
                                         </a>
                                     </li> 
                                     <li>
                                         <a href="https://www.youtube.com/channel/UC_D9sg8ms0JojdebA-lDgMA" target="_blank">
                                             <span data-sfref="[images|OpenAccessDataProvider]6bda11d6-e855-6b4a-a72f-ff000008fdb8" class="sfImageWrapper">
-                                                <img src="/hungthinh/templates/img/icon-youtube.png" alt="icon-YouTube" style="border-width: 0px; border-style: solid;" displaymode="Original" title="icon-YouTube">
+                                                <img src="<?php echo BASE_URL;?>/templates/img/icon-youtube.png" alt="icon-YouTube" style="border-width: 0px; border-style: solid;" displaymode="Original" title="icon-YouTube">
                                             </span>
                                         </a>
                                     </li> 
                                     <li>
                                         <a href="https://twitter.com/CapitaLand" target="_blank">
                                             <span data-sfref="[images|OpenAccessDataProvider]79da11d6-e855-6b4a-a72f-ff000008fdb8" class="sfImageWrapper">
-                                                <img src="/hungthinh/templates/img/icon-twitter.png" alt="icon-twitter" style="border-width: 0px; border-style: solid;" displaymode="Original" title="icon-twitter">
+                                                <img src="<?php echo BASE_URL;?>/templates/img/icon-twitter.png" alt="icon-twitter" style="border-width: 0px; border-style: solid;" displaymode="Original" title="icon-twitter">
                                             </span>
                                         </a>
                                     </li> 
                                     <li>
                                         <span data-sfref="[images|OpenAccessDataProvider]98da11d6-e855-6b4a-a72f-ff000008fdb8" class="sfImageWrapper">
-                                            <img src="/hungthinh/templates/img/icon-instagram8fda11d6e8556b4aa72fff000008fdb8.png" alt="icon-instagram" style="border-width: 0px; border-style: solid;" displaymode="Original" title="icon-instagram">
+                                            <img src="<?php echo BASE_URL;?>/templates/img/icon-instagram8fda11d6e8556b4aa72fff000008fdb8.png" alt="icon-instagram" style="border-width: 0px; border-style: solid;" displaymode="Original" title="icon-instagram">
                                         </span>
                                     </li> 
                                     <li>
                                         <a href="https://www.linkedin.com/company/capitaland-limited" target="_blank">
                                             <span data-sfref="[images|OpenAccessDataProvider]a6da11d6-e855-6b4a-a72f-ff000008fdb8" class="sfImageWrapper">
-                                                <img src="/hungthinh/templates/img/icon-linkedin.png" alt="icon-LinkedIn" style="border-width: 0px; border-style: solid;" displaymode="Original" title="icon-LinkedIn">
+                                                <img src="<?php echo BASE_URL;?>/templates/img/icon-linkedin.png" alt="icon-LinkedIn" style="border-width: 0px; border-style: solid;" displaymode="Original" title="icon-LinkedIn">
                                             </span>
                                         </a>
                                     </li> 
                                     <li>
                                         <a href="https://plus.google.com/104538760926725976914/posts" target="_blank">
                                             <span data-sfref="[images|OpenAccessDataProvider]b4da11d6-e855-6b4a-a72f-ff000008fdb8" class="sfImageWrapper">
-                                                <img src="/hungthinh/templates/img/icon-googleplus.png" alt="google+" style="border-width: 0px; border-style: solid;" displaymode="Original" title="icon-googleplus">
+                                                <img src="<?php echo BASE_URL;?>/templates/img/icon-googleplus.png" alt="google+" style="border-width: 0px; border-style: solid;" displaymode="Original" title="icon-googleplus">
                                             </span>
                                         </a>
                                     </li> 
                                     <li>
                                         <a href="http://www.pinterest.com/capitaland/" target="_blank">
                                             <span data-sfref="[images|OpenAccessDataProvider]cbda11d6-e855-6b4a-a72f-ff000008fdb8" class="sfImageWrapper">
-                                                <img src="/hungthinh/templates/img/icon-pinterest.png" alt="icon-pinterest" style="border-width: 0px; border-style: solid;" displaymode="Original" title="icon-pinterest">
+                                                <img src="<?php echo BASE_URL;?>/templates/img/icon-pinterest.png" alt="icon-pinterest" style="border-width: 0px; border-style: solid;" displaymode="Original" title="icon-pinterest">
                                             </span>
                                         </a>
                                     </li> 
@@ -213,13 +213,13 @@
                             <div class="sfContentBlock e-newsletter">
                                 <h3><span>Bản tin CapitaLand Việt Nam</span></h3> 
                                 <a href="http://capitaland.com.vn/e-newsletter">
-                                    <img alt="Bản tin CapitaLand Việt Nam" title="Bản tin CapitaLand Việt Nam" src="/hungthinh/templates/img/newsletter-vietnam.png" style="border-width: 0px; border-style: solid;">
+                                    <img alt="Bản tin CapitaLand Việt Nam" title="Bản tin CapitaLand Việt Nam" src="<?php echo BASE_URL;?>/templates/img/newsletter-vietnam.png" style="border-width: 0px; border-style: solid;">
                                 </a>
                             </div>
                             <div class="sfContentBlock e-newsletter">
                                 <h3><span>Bản tin tập đoàn CapitaLand</span></h3> 
                                 <a href="http://inside.capitaland.com/" target="_blank">
-                                    <img alt="Bản tin tập đoàn CapitaLand" title="Bản tin tập đoàn CapitaLand" src="/hungthinh/templates/img/newsletter-group.png" style="display: block; margin-left: auto; margin-right: auto; padding: 0px 10px 10px; border-width: 0px; border-style: solid;"> 
+                                    <img alt="Bản tin tập đoàn CapitaLand" title="Bản tin tập đoàn CapitaLand" src="<?php echo BASE_URL;?>/templates/img/newsletter-group.png" style="display: block; margin-left: auto; margin-right: auto; padding: 0px 10px 10px; border-width: 0px; border-style: solid;"> 
                                 </a>
                             </div>            
                         </div>
@@ -230,7 +230,7 @@
     </div>
 
     <div id="cprContent_T979D2F30005" class="sky-carousel sc-no-select" style="visibility: visible;">
-        <script src="/hungthinh/templates/js/jquery.sky.carousel-1.0.2.min.js" type="text/javascript"></script>
+        <script src="<?php echo BASE_URL;?>/templates/js/jquery.sky.carousel-1.0.2.min.js" type="text/javascript"></script>
         <script type="text/javascript">
             jQuery(document).ready(function ($) {
                 $('.sky-carousel').carousel({
@@ -262,7 +262,7 @@
                 <?php for ($i = 1; $i <= 20; $i++): ?>
                     <li class="item-project">
                         <a href="http://capitaland.com.vn/our-projects/hochiminh/du-an-kris-vue-quan-2" title="KRIS VUE">
-                            <img src="/hungthinh/templates/img/kris-vue_bird-eyes-view-thumbnail.jpg" alt="KRIS VUE" title="KRIS VUE">
+                            <img src="<?php echo BASE_URL;?>/templates/img/kris-vue_bird-eyes-view-thumbnail.jpg" alt="KRIS VUE" title="KRIS VUE">
                         </a>
                         <div class="sc-content">
                             <h2><a href="http://capitaland.com.vn/our-projects/hochiminh/du-an-kris-vue-quan-2">KRIS VUE <?php echo $i; ?></a></h2>
@@ -273,8 +273,8 @@
         </div>
     </div>
     <div id="cprContent_T979D2F30006" class="latest-video">
-        <link rel="stylesheet" href="/hungthinh/templates/css/prettyPhoto.css">
-        <script src="/hungthinh/templates/js/jquery.prettyPhoto.js"></script>
+        <link rel="stylesheet" href="<?php echo BASE_URL;?>/templates/css/prettyPhoto.css">
+        <script src="<?php echo BASE_URL;?>/templates/js/jquery.prettyPhoto.js"></script>
         <script>
             $(document).ready(function () {
                 $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({
@@ -300,8 +300,8 @@
                         <a href="http://www.youtube.com/watch?v=DTQmoABMjKs" rel="prettyPhoto" title="Feliz en Vista - Dệt nên vẻ đẹp ngày mai">
                             <div class="avs_thumb_inner">
                                 <div class="avs_img_container">
-                                    <img class="arrow" src="/hungthinh/templates/img/play.png" border="0"> 
-                                    <img class="image" src="/hungthinh/templates/img/default.jpg" style="width:150px; height:95px;" border="0">
+                                    <img class="arrow" src="<?php echo BASE_URL;?>/templates/img/play.png" border="0"> 
+                                    <img class="image" src="<?php echo BASE_URL;?>/templates/img/default.jpg" style="width:150px; height:95px;" border="0">
                                 </div> 
                                 <span class="title">Feliz en Vista - Dệt nên vẻ đẹp...</span> 
                             </div>

@@ -8,10 +8,10 @@
         </title>
         <link href="/favicon.ico" type="image/x-icon" rel="icon">
         <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon">
-        <link rel="stylesheet" href="/hungthinh/templates/css/normalize.css">    
-        <link rel="stylesheet" href="/hungthinh/templates/css/style.css">    
-        <link rel="stylesheet" href="/hungthinh/templates/css/style-responsive.css">    
-        <script src="/hungthinh/templates/js/jquery-1.10.2.min.js"></script>
+        <link rel="stylesheet" href="<?php echo BASE_URL;?>/templates/css/normalize.css">    
+        <link rel="stylesheet" href="<?php echo BASE_URL;?>/templates/css/style.css">    
+        <link rel="stylesheet" href="<?php echo BASE_URL;?>/templates/css/style-responsive.css">    
+        <script src="<?php echo BASE_URL;?>/templates/js/jquery-1.10.2.min.js"></script>
     </head>
     <body>
         <div id="wrapper">
@@ -19,7 +19,7 @@
                 <div class="topheader">
                     <div class="responsivelogo"> 
                         <a href="http://capitaland.com.vn/">
-                            <img src="/hungthinh/templates/img/logo_new.png" alt="">            
+                            <img src="<?php echo BASE_URL;?>/templates/img/logo_new.png" alt="">            
                         </a> 
                     </div> 
                     <div class="languagewrapper"> 
@@ -52,7 +52,7 @@
                                     <div id="cprHeader_T3A17860F008_Col00" class="sf_colsIn sf_1col_1in_100">
                                         <div class="logo">
                                             <a href="http://capitaland.com.vn/" title="CapitaLand Limited"> 
-                                                <img src="/hungthinh/templates/img/logo_new.png" alt="">                                </a>
+                                                <img src="<?php echo BASE_URL;?>/templates/img/logo_new.png" alt="">                                </a>
                                         </div>
                                         <div class="headbottom">
                                             <ul class="headmenu"> 

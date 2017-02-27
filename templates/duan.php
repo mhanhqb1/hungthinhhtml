@@ -8,11 +8,11 @@
                             <ul class="rsmFlow rsmLevel rsmOneLevel">
                                 <li class="rsmItem sfBreadcrumbNavigation">
                                     <a class="rsmLink" href="/" title="CapitaLand là một trong những tập đoàn bất động sản lớn nhất Châu Á. Được niêm yết với trụ sở chính tại Singapore">Trang chủ</a>
-                                    <img src="/hungthinh/templates/img/arrow.png">
+                                    <img src="<?php echo BASE_URL;?>/templates/img/arrow.png">
                                 </li> 
                                 <li class="rsmItem sfBreadcrumbNavigation">
                                     <a class="rsmLink" href="../our-projects">Dự án</a>
-                                    <img src="/hungthinh/templates/img/arrow.png">
+                                    <img src="<?php echo BASE_URL;?>/templates/img/arrow.png">
                                 </li> 
                                 <li class="rsmItem sfNoBreadcrumbNavigation">
                                     <a class="rsmLink" href="javascript: void(0)" title="Dự án Hà Nội">HÀ NỘI</a>
@@ -166,15 +166,15 @@
                 <div class="contactmenu">
                     <div class="custom phone" style="padding: 8px 12px;"> 
                         <p>
-                            <span><img alt="" src="/hungthinh/templates/img/General_Inquiries.png" style="border-width: 0px; border-style: solid;">&nbsp;&nbsp; Thông tin chung :<br>
+                            <span><img alt="" src="<?php echo BASE_URL;?>/templates/img/General_Inquiries.png" style="border-width: 0px; border-style: solid;">&nbsp;&nbsp; Thông tin chung :<br>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 84-08 3519 1067</span>
                         </p> 
                         <p>
-                            <span><img alt="" src="/hungthinh/templates/img/Sale.png" style="border-width: 0px; border-style: solid;">&nbsp;&nbsp;&nbsp; Phòng Kinh Doanh :<br>
+                            <span><img alt="" src="<?php echo BASE_URL;?>/templates/img/Sale.png" style="border-width: 0px; border-style: solid;">&nbsp;&nbsp;&nbsp; Phòng Kinh Doanh :<br>
                                 &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; 1800 599 986<br> </span>
                         </p> 
                         <p>
-                            <span><img alt="" src="/hungthinh/templates/img/Customer_Relation.png" style="border-width: 0px; border-style: solid;">&nbsp; Phòng Khách Hàng :</span><span></span></p> <p><span>08-35194504 (HCMC)</span></p> <p><span>04-39393232 ext:200 (Hanoi)</span></p> <p><span>65-67133222 (Singapore)</span> <span> </span> 
+                            <span><img alt="" src="<?php echo BASE_URL;?>/templates/img/Customer_Relation.png" style="border-width: 0px; border-style: solid;">&nbsp; Phòng Khách Hàng :</span><span></span></p> <p><span>08-35194504 (HCMC)</span></p> <p><span>04-39393232 ext:200 (Hanoi)</span></p> <p><span>65-67133222 (Singapore)</span> <span> </span> 
                         </p> 
                     </div> 
                     <p> </p>

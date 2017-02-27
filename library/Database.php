@@ -1,5 +1,7 @@
 <?php
 	define('PAGE_LIMIT', 9);
+        define('BASE_URL', 'http://localhost:8080/hungthinhhtml');
+        
 	class DATABASE{
 		protected $_hostname = "localhost";
 		protected $_hostuser = "root";
