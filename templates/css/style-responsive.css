@@ -1,0 +1,304 @@
+
+@media only screen and (min-width: 1025px){
+.responsivemenu {display:none !important;}
+}
+@media only screen and (max-width: 1024px){
+.topheader {background:none; height:70px; border-bottom:5px solid #07B048;}
+.bottomheader {display:none;}
+.responsivelogo{height:42px;text-align:center;width:30%;padding-top:20px;float:left;background-color:#ffffff;position:relative; display:block;}
+.languagewrapper{background:#29417D;width:70%;text-align:center;height:70px;display:inline-block}
+#button-menu {display:block;}
+.responsivetoggle{display:inline-block;position:relative;top:-9px;margin-left:10px}
+.responsivemenu {display:block;}
+#languageselection{float:none !important;display:inline-block;margin:-5px 10px 0 0;padding:15px 0 0}
+/*.menu2 {display:block;}*/
+
+#container {
+margin:0;
+padding:0;
+width:100%;
+min-height:350px;
+}
+.contentwrapper, .contentwrapperfull {width:100%; padding:0; margin:0;}
+
+.breadcrumb, .print, .share {display:none;}
+.contentwrapper h2, .contentwrapperfull h2 {
+margin: 0;
+padding: 5px 15px;
+background: #1B1F2A;
+color: #FFF;
+line-height: 20px;
+font-size:14px;
+}
+
+.sfimageWrp img {width:100%;}
+.sfContentBlock {padding:0 15px;}
+.contentleft {
+	width:100%;
+}
+.submenu ul li {
+border-bottom: 2px solid #E6E6E6;
+background: url(../img/menu-inactive.png) no-repeat 90% center;
+text-indent: 5%;
+}
+
+.submenu ul li.active {
+background: url(../img/menu-active.png) no-repeat 90% center #EAEAEA;
+}
+.submenu ul li.active a {
+text-align:left;
+font-size:15px;
+}
+.submenu ul li.active a, .submenu ul li a:hover {
+background:transparent;
+}
+
+.contactmenu {display:none;}
+
+.footer { 
+width:100%;
+padding:0 15px;
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+
+}
+
+.footer .footer-links{ 
+width:80%;
+margin-top:10px;
+}
+.footer .footer-links ul li {
+height:24px;
+}
+.cookie-consent ul.wrapper {
+width: 100%;
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  padding:0 10px;
+}
+.homeleft{
+	width:100%;
+	padding-top:0;
+}
+.homebanner {
+width:100%;
+}
+.homeright, .latest-video {
+display:none;
+}
+#banner_container {
+background: none;
+}
+#banner_container .slide_thumb {
+display:none !important;
+}
+.sky-carousel  {
+margin-top:-90px;
+}
+.awardsDetail .sfitemRichText img {
+width:104%;
+margin-left:-15px;
+}
+.awardsDetail .sfitemRichText p {
+margin:0 15px 18px;
+}
+
+.awardsDetail .sfitemRichText ul li {
+margin-left:30px;
+}
+
+.ourprojects {
+margin:0 15px 10px;
+}
+
+.projectDetail .projectLogo {
+padding:0 25px;
+width:25%;
+height:100px;
+}
+.projectDetail .projectLogo  img{
+width:auto;
+max-width:100%;
+height:auto;
+max-height:100%;
+}
+
+.projectDetail .tabContainer {
+position: absolute;
+top: 45px;
+left: 30%;
+width: 70%;
+}
+.projectDetail .tabContainer ul {
+border:0;
+width:auto;
+}
+.projectDetail .tabContainer ul li {
+width: 47%;
+float: none;
+display: inline-block;
+margin: 0;
+padding: 0 5px 10px 0;
+list-style: none;
+list-style-image: none;
+background: none;
+box-sizing:border-box;
+}
+.tabCol div.tabColBg {
+border-radius:0;
+border:1px solid #ddd;
+}
+
+.projectDetail .sfitemRichText p {
+margin:0 15px 18px;
+}
+
+#map-canvas-project {
+max-width: 1024px;
+height: 280px;
+margin-bottom: 30px;
+width: 100%;
+}
+
+.newsletter ul li  {
+width:31%;
+margin-right:1.5%;
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.newsletter .newslettertitle a {
+padding-right:20px;
+}
+
+.divVideo ul li{
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+
+}
+
+.careermain p, .careerDetail p, .careerTable p {
+margin:0 15px 18px;
+}
+
+.contact_left, .contact_right {
+width:100%;
+}
+.newsitem{
+margin:0 15px;
+padding-bottom:10px;
+}
+.newsDetail .newsDate {
+margin:0 15px 18px;
+}
+.newsDetail .newsContent p {
+margin:0 15px 18px;
+}
+
+.interestForm {
+margin:0 15px 18px;
+}
+.interestForm p{
+margin:18px 0;
+}
+.form_element.div_checkboxgroup .form_element_subheader {
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.form_element.div_checkboxgroup .checkboxgroup_c4 ol li{
+width:49.5%;
+}
+#container .form_element.div_checkboxgroup .form_element_subheader span.sfError {
+clear:both;
+margin:0;
+}
+.form_element .div_text {
+clear:both;
+width:100%;
+}
+.form_element .div_text input.field_input, .form_element .div_text input.field_input2 {
+max-width:480px;
+width:90%;
+}
+
+.divSubscribe{ 
+margin:0 15px 18px;
+}
+#container .sfError {
+width:auto;
+}
+}
+
+
+@media only screen and (max-width: 640px){
+#banner_container .caption-link p {
+font-size:1.5em;
+}
+.awardsDetail .sfitemRichText img {
+width:105%;
+margin-left:-15px;
+}
+.awards ul li {
+width:46%;
+margin-right:3%;
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.jssort11 {
+display:none;
+}
+
+.newsletter ul li  {
+width:47%;
+margin-right:2%;
+}
+.divVideo ul li{ 
+width:47%;
+margin-right:2%;
+}
+
+.form_element.div_checkboxgroup .checkboxgroup_c2 ol li, .form_element.div_checkboxgroup .checkboxgroup_c4 ol li{
+width:99%;
+}
+}
+
+@media only screen and (max-width: 540px){
+.sky-carousel  {
+margin-top:-50px;
+}
+
+.newsitem .newstitle {clear:both;}
+#container .pagination ul {text-align:center;}
+}
+
+@media only screen and (max-width: 480px){
+
+.awardsDetail .sfitemRichText img {
+width:108%;
+margin-left:-15px;
+}
+.projectDetail .projectLogo {
+padding:0 10px;
+width:20%;
+height:100px;
+}
+.projectDetail .tabContainer {
+position: absolute;
+left: 25%;
+width: 75%;
+}
+}
+
+@media only screen and (max-width: 320px){
+.divSubscribe .form_element .tbxName {
+width:180px;
+}
+.divSubscribe .form_element .tbxEmail {
+width:264px;
+}
+}
