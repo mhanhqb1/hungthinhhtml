@@ -4,7 +4,7 @@
 		protected $_hostname = "localhost";
 		protected $_hostuser = "root";
 		protected $_hostpass = "";
-		protected $_dbname = "hungthinhnew";
+		protected $_dbname = "new_hungthinh";
 		protected $_connect;
 		protected $_result;
 		
@@ -46,7 +46,7 @@
 	function __autoload($class){
 		require "models/".strtolower($class).".php";	
 	}
-
+	
 	function convertURL($str)
 	{
 		$str = preg_replace("/(\,|-|\.)/", '', $str);
@@ -65,7 +65,7 @@
 		$str = preg_replace("/(Ỳ|Ý|Ỵ|Ỷ|Ỹ)/", 'Y', $str);
 		$str = preg_replace("/(Đ)/", 'D', $str);
 		$str = preg_replace('/\s+/', ' ', $str);
-                $str = str_replace("/", "-", $str);
+		$str = str_replace("/", "-", $str);
 		$str = str_replace(" ", "-", $str);
 		return strtolower($str);
 	}
