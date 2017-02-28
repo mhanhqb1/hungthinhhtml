@@ -1,6 +1,6 @@
 <?php
 	define('PAGE_LIMIT', 9);
-        define('BASE_URL', 'http://localhost:8080/hungthinhhtml');
+        define('BASE_URL', 'http://test.localhost/hungthinh');
         
 	class DATABASE{
 		protected $_hostname = "localhost";

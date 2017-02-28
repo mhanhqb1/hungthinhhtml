@@ -39,13 +39,12 @@ tinymce.init({
          "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
          "save table contextmenu directionality emoticons template paste textcolor responsivefilemanager"
     ],
-    content_css: "css/content.css",
     toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image responsivefilemanager| print preview media fullpage | forecolor backcolor emoticons", 
     image_advtab: true ,
    
   external_filemanager_path:"../filemanager/",
    filemanager_title:"Responsive Filemanager" ,
-   external_plugins: { "filemanager" : "../filemanager/plugin.min.js"}
+   external_plugins: { "filemanager" : "../../filemanager/plugin.min.js"}
 }); 
 </script>
 </head>
@@ -63,7 +62,7 @@ tinymce.init({
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Admin Area - tapdoanhungthinh.vn</a>
+                <a class="navbar-brand" href="index.php">Admin Area - HungThinh</a>
             </div>
             <!-- /.navbar-header -->
 

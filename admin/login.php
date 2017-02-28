@@ -16,10 +16,7 @@ if(isset($_POST['submit'])){
         $err[] = 'Please enter password !';
     }
     if($email && $pass){
-        // require_once "../library/Database.php";
-        // $user = new USER;
-        // $admin = $user->checkAdminLogin($email,$pass);
-        if($email == 'tuanhoang' && $pass == 'hhoangddinhttuan' ){
+        if($email == 'admin' && $pass == '123456' ){
             $_SESSION['level'] = '2';
             $_SESSION['admin_name'] = 'Hoang Tuan';
             $_SESSION['user_id'] = '1';
@@ -41,7 +38,7 @@ if(isset($_POST['submit'])){
     <meta name="description" content="Khóa Học Lập Trình Laravel Framework 5.x Tại Khoa Phạm">
     <meta name="author" content="Vu Quoc Tuan">
 
-    <title>Admin - DynamicShipping</title>
+    <title>Admin - HungThinh</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="templates/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
