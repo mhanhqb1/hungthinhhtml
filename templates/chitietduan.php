@@ -1,5 +1,9 @@
+<?php 
+$duan = new DUAN;
+$id = $_GET['id'];
+$data = $duan->listOne($id);
+?>
 <div id="container">
-
     <div class="sf_cols">
         <div class="sf_colsOut contentarea">
             <div id="cprContent_TFA24BDA5001_Col00" class="sf_colsIn sf_1col_1in_100">
@@ -11,11 +15,11 @@
                                     <div id="ctl00_cprContent_TFA24BDA5003_ctl00_ctl00_Breadcrumb" class="RadSiteMap RadSiteMap_">
                                         <ul class="rsmFlow rsmLevel rsmOneLevel">
                                             <li class="rsmItem sfBreadcrumbNavigation">
-                                                <a class="rsmLink" href="../../home" title="CapitaLand là một trong những tập đoàn bất động sản lớn nhất Châu Á. Được niêm yết với trụ sở chính tại Singapore">Trang chủ</a>
+                                                <a class="rsmLink" href="<?php echo BASE_URL;?>" title="CapitaLand là một trong những tập đoàn bất động sản lớn nhất Châu Á. Được niêm yết với trụ sở chính tại Singapore">Trang chủ</a>
                                                 <img src="<?php echo BASE_URL;?>/templates/img/arrow.png">
                                             </li> 
                                             <li class="rsmItem sfBreadcrumbNavigation">
-                                                <a class="rsmLink" href="../../our-projects">Dự án</a>
+                                                <a class="rsmLink" href="<?php echo BASE_URL;?>/index.php?controller=duan">Dự án</a>
                                                 <img src="<?php echo BASE_URL;?>/templates/img/arrow.png">
                                             </li> 
                                             <li class="rsmItem sfNoBreadcrumbNavigation">
@@ -77,7 +81,7 @@
                                     <div class="projectDetail" data-sf-provider='OpenAccessProvider' data-sf-id='c2ca10d6-e855-6b4a-a72f-ff000008fdb8' data-sf-type="Telerik.Sitefinity.DynamicModules.Model.DynamicContent">
 
                                         <div class="projectLogo">
-                                            <a href='http://vistaverde.com.vn' target='_blank'><img src='http://capitaland.com.vn/images/libraries/projects/vista-verde/vv008811d6e8556b4aa72fff000008fdb8.jpg?sfvrsn=2' alt='VV' title='VV' /></a>
+                                            <a href='http://vistaverde.com.vn' target='_blank'><img src='<?php echo BASE_URL;?>/media/images/duan/<?php echo $data['logo'];?>' alt='VV' title='VV' /></a>
                                         </div>
                                         <div class="tabContainer">
                                             <ul>
@@ -422,10 +426,6 @@
 
                             <div class="sfNavWrp sfNavTreeviewWrp submenu ">
 
-
-
-
-
                                 <ul id="cprContent_T728A4C8D001_ctl00_ctl00_navigationUl" class="sfNavTreeview sfNavList">
 
                                     <li>           
@@ -438,12 +438,10 @@
                                     </li>                                        
 
                                 </ul>
-                            </div><div class='contactmenu'><div class="custom phone" style="padding: 8px 12px;"> <p><span><img alt="" src="<?php echo BASE_URL;?>/templates/img/General_Inquiries.png" style="border-width: 0px; border-style: solid;" />&nbsp;&nbsp; Th&ocirc;ng tin chung :<br />
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 84-08 3519 1067</span></p> <p><span><img alt="" src="<?php echo BASE_URL;?>/templates/img/Sale.png" style="border-width: 0px; border-style: solid;" />&nbsp;&nbsp;&nbsp; Ph&ograve;ng Kinh Doanh :<br />
-                                            &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; 1800 599 986<br /> </span></p> <p><span><img alt="" src="<?php echo BASE_URL;?>/templates/img/Customer_Relation.png" style="border-width: 0px; border-style: solid;" />&nbsp; Ph&ograve;ng Kh&aacute;ch H&agrave;ng :</span><span></span></p> <p><span>08-35194504 (HCMC)</span></p> <p><span>04-39393232 ext:200 (Hanoi)</span></p> <p><span>65-67133222 (Singapore)</span> <span> </span> </p> </div> <p> </p>
-
-
-                            </div>            
+                            </div>
+                            <?php 
+                                require_once "templates/element/menucontact.php";
+                            ?>
                         </div>
                     </div>
                 </div>

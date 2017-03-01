@@ -1,12 +1,12 @@
 <?php
 	define('PAGE_LIMIT', 9);
-        define('BASE_URL', 'http://test.localhost/hungthinh');
+        define('BASE_URL', 'http://test.localhost/hungthinhhtml');
         
 	class DATABASE{
 		protected $_hostname = "localhost";
 		protected $_hostuser = "root";
 		protected $_hostpass = "";
-		protected $_dbname = "new_hungthinh";
+		protected $_dbname = "hungthinhnew";
 		protected $_connect;
 		protected $_result;
 		
