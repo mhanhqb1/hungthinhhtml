@@ -32,7 +32,7 @@ $data = $duan->listOne($id);
                                 <div class="clr"></div>
                             </div>
                             <div class='contentheader'>
-                                <h2>TP. HỒ CH&Iacute; MINH</h2>
+                                <h2><?php echo $controller; ?></h2>
                             </div>
                             <div>
                                 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
@@ -422,23 +422,6 @@ $data = $duan->listOne($id);
                     </div>
                     <div class="sf_colsOut contentleft">
                         <div id="cprContent_TFA24BDA5002_Col01" class="sf_colsIn sf_2cols_2in_25">
-
-
-                            <div class="sfNavWrp sfNavTreeviewWrp submenu ">
-
-                                <ul id="cprContent_T728A4C8D001_ctl00_ctl00_navigationUl" class="sfNavTreeview sfNavList">
-
-                                    <li>           
-                                        <a href="/our-projects/hanoi">HÀ NỘI</a>
-
-                                    </li>                                        
-
-                                    <li class="active">
-                                        <a href="/our-projects/hochiminh">TP. HỒ CHÍ MINH</a>
-                                    </li>                                        
-
-                                </ul>
-                            </div>
                             <?php 
                                 require_once "templates/element/menucontact.php";
                             ?>

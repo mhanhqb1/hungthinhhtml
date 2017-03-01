@@ -8,6 +8,7 @@
 		protected $_vitri;
 		protected $_matbang;
 		protected $_vitrihienthi;
+		protected $_isNoiThanh;
 		
 		public function __construct(){
 			$this->connect();	
@@ -18,6 +19,13 @@
 		}
 		public function getImage(){
 			return $this->_image;
+		}
+                
+		public function setIsNoiThanh($i){
+			$this->_isNoiThanh = $i;
+		}
+		public function getIsNoiThanh(){
+			return $this->_isNoiThanh;
 		}
 
 		public function setLogo($i){
@@ -103,7 +111,7 @@
 		}
 
 		public function insert(){
-			$sql = "INSERT INTO duan(title, logo, image, description, thongtin, vitri, matbang, vitrihienthi) values('".$this->getTitle()."', '".$this->getLogo()."', '".$this->getImage()."', '".$this->getDescription()."', '".$this->getThongtin()."', '".$this->getVitri()."', '".$this->getMatbang()."', '".$this->getVitrihienthi()."')";
+			$sql = "INSERT INTO duan(is_noithanh, title, logo, image, description, thongtin, vitri, matbang, vitrihienthi) values(('".$this->getIsNoiThanh()."', '".$this->getTitle()."', '".$this->getLogo()."', '".$this->getImage()."', '".$this->getDescription()."', '".$this->getThongtin()."', '".$this->getVitri()."', '".$this->getMatbang()."', '".$this->getVitrihienthi()."')";
 			$this->query($sql);
 		}
 
@@ -115,7 +123,7 @@
                     if (!empty($this->getLogo())) {
                         $sql .= " logo='".$this->getLogo()."',";
                     }
-                    $sql .= " description='".$this->getDescription()."', title='".$this->getTitle()."', thongtin='".$this->getThongtin()."', vitri='".$this->getVitri()."', matbang='".$this->getMatbang()."', vitrihienthi='".$this->getVitrihienthi()."' WHERE id='".$id."'";
+                    $sql .= " is_noithanh='".$this->getIsNoiThanh()."', description='".$this->getDescription()."', title='".$this->getTitle()."', thongtin='".$this->getThongtin()."', vitri='".$this->getVitri()."', matbang='".$this->getMatbang()."', vitrihienthi='".$this->getVitrihienthi()."' WHERE id='".$id."'";
 			
                     $this->query($sql);
 		}

@@ -16,6 +16,8 @@ $db = new DATABASE;
 
 $db->connect();
 
+$controller = '';
+
 if(isset($_GET['controller'])){
 
 	switch ($_GET['controller']) {

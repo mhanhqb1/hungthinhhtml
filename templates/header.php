@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="<?php echo BASE_URL;?>/templates/css/normalize.css">    
         <link rel="stylesheet" href="<?php echo BASE_URL;?>/templates/css/style.css">    
         <link rel="stylesheet" href="<?php echo BASE_URL;?>/templates/css/style-responsive.css">    
+        <link rel="stylesheet" href="<?php echo BASE_URL;?>/templates/css/telerik.css">    
         <script src="<?php echo BASE_URL;?>/templates/js/jquery-1.10.2.min.js"></script>
     </head>
     <body>
@@ -26,12 +27,12 @@
                         <div id="languageselection"> 
                             <ul class="languageselection"> 
                                 <li>
-                                    <a href="http://capitaland.com.vn/en">
+                                    <a href="<?php echo BASE_URL;?>">
                                         <span lang="en" xml:lang="en">English |</span>
                                     </a>
                                 </li> 
                                 <li id="active_language">
-                                    <a href="http://capitaland.com.vn/">
+                                    <a href="<?php echo BASE_URL;?>">
                                         <span lang="vi" xml:lang="vi">Tiếng Việt</span>
                                     </a>
                                 </li> 
