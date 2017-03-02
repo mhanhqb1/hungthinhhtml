@@ -831,7 +831,7 @@ padding: 2px 6px;
 
 .homeright .sfContentBlock.hm-panel-news-aside #corp_newsContainer {
 	/*width:276px;*/
-	height:155px;
+	height:auto;
 	overflow:hidden;
 	font-size:14px; padding-top: 0;
 	

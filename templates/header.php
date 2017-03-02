@@ -19,7 +19,7 @@
             <div id="header">
                 <div class="topheader">
                     <div class="responsivelogo"> 
-                        <a href="http://capitaland.com.vn/">
+                        <a href="<?php echo BASE_URL;?>">
                             <img src="<?php echo BASE_URL;?>/templates/img/logo_new.png" alt="">            
                         </a> 
                     </div> 
@@ -39,7 +39,7 @@
                             </ul> 
                         </div> 
                         <div class="responsivetoggle">
-                            <a href="http://capitaland.com.vn/#" id="button-menu"></a> 
+                            <a href="#" id="button-menu"></a> 
                         </div> 
                     </div> 
                     <div class="clr">&nbsp;</div>
@@ -52,41 +52,41 @@
                                 <div class="sf_colsOut bottomheaderwrapper">
                                     <div id="cprHeader_T3A17860F008_Col00" class="sf_colsIn sf_1col_1in_100">
                                         <div class="logo">
-                                            <a href="http://capitaland.com.vn/" title="CapitaLand Limited"> 
+                                            <a href="<?php echo BASE_URL;?>" title="Hưng Thịnh Limited"> 
                                                 <img src="<?php echo BASE_URL;?>/templates/img/logo_new.png" alt="">                                </a>
                                         </div>
                                         <div class="headbottom">
                                             <ul class="headmenu"> 
                                                 <li>
-                                                    <a href="http://www.capitaland.com/" target="_blank">Tập đoàn CapitaLand </a>
+                                                    <a href="<?php echo BASE_URL;?>" target="_blank">Tập đoàn Hưng Thịnh </a>
                                                 </li> 
                                                 <li>
-                                                    <a href="http://capitaland.com.vn/careers-with-us">Nghề nghiệp cùng chúng tôi</a>
+                                                    <a href="<?php echo BASE_URL;?>">Nghề nghiệp cùng chúng tôi</a>
                                                 </li> 
                                                 <li>
-                                                    <a href="http://capitaland.com.vn/contact-us">Liên hệ </a>
+                                                    <a href="<?php echo BASE_URL;?>/index.php?controller=lienhe">Liên hệ </a>
                                                 </li> 
                                             </ul>
                                         </div>
                                         <div class="sfNavWrp sfNavHorizontalDropDownWrp bottombottom ">
                                             <ul id="cprHeader_T3A17860F014_ctl00_ctl00_navigationUl" class="sfNavHorizontalDropDown sfNavList ext-menu">
                                                 <li class="home">
-                                                    <a href="index.php">Trang chủ</a>
+                                                    <a href="<?php echo BASE_URL;?>">Trang chủ</a>
                                                 </li>
                                                 <li class="about-capitaland">
-                                                    <a href="index.php?controller=gioithieu">Về CapitaLand</a>
+                                                    <a href="<?php echo BASE_URL;?>/index.php?controller=gioithieu">Về Hưng Thịnh</a>
                                                 </li>
 
                                                 <li class="our-projects">
-                                                    <a href="index.php?controller=duan">Dự án</a>
+                                                    <a href="<?php echo BASE_URL;?>/index.php?controller=duan">Dự án</a>
                                                 </li>
 
                                                 <li class="register-interest">
-                                                    <a href="http://capitaland.com.vn/register-interest">Bạn quan tâm đến</a>
+                                                    <a href="<?php echo BASE_URL;?>">Bạn quan tâm đến</a>
                                                 </li>
 
                                                 <li class="news">
-                                                    <a href="index.php?controller=tintuc">Tin tức</a>
+                                                    <a href="<?php echo BASE_URL;?>/index.php?controller=tintuc">Tin tức</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -104,25 +104,25 @@
             <div class="sfNavWrp sfNavHorizontalDropDownWrp responsivemenu ">
                 <ul id="cprMenu_T3A17860F016_ctl00_ctl00_navigationUl" class="sfNavHorizontalDropDown sfNavList dropmenu">
                     <li class="active">
-                        <a href="index.php">Trang chủ</a>
+                        <a href="<?php echo BASE_URL;?>">Trang chủ</a>
                     </li>
                     <li class="">
-                        <a href="index.php?controller=gioithieu" data-toggle="dropdown">Về CapitaLand</a>
+                        <a href="<?php echo BASE_URL;?>/index.php?controller=gioithieu" data-toggle="dropdown">Về Hưng Thịnh</a>
                     </li>
                     <li class="dropdown">
-                        <a href="index.php?controller=duan" data-toggle="dropdown">Dự án</a>
+                        <a href="<?php echo BASE_URL;?>/index.php?controller=duan" data-toggle="dropdown">Dự án</a>
                     </li>
                     <li class="">
-                        <a href="index.php?controller=tintuc">Tin tức</a>
+                        <a href="<?php echo BASE_URL;?>/index.php?controller=tintuc">Tin tức</a>
                     </li>
                     <li class="">
-                        <a href="http://capitaland.com.vn/video">Video</a>
+                        <a href="<?php echo BASE_URL;?>">Video</a>
                     </li>
                     <li class="">
-                        <a href="http://capitaland.com.vn/careers-with-us">Nghề nghiệp cùng chúng tôi</a>
+                        <a href="<?php echo BASE_URL;?>">Nghề nghiệp cùng chúng tôi</a>
                     </li>
                     <li class="">
-                        <a href="index.php?controller=lienhe">Liên Hệ</a>
+                        <a href="<?php echo BASE_URL;?>/index.php?controller=lienhe">Liên Hệ</a>
                     </li>
                 </ul>
             </div>

@@ -1,3 +1,9 @@
+<?php 
+$duan = new DUAN;
+$data = $duan->listAll();
+$tintuc = new NEWS;
+$dataTintuc = $tintuc->listAll(4);
+?>
 <div id="container">
     <div class="sf_cols">
         <div class="sf_colsOut homewrapper">
@@ -71,34 +77,12 @@
                                     </div>
                                     <!-- Slides Container -->
                                     <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 743px; height: 473px; overflow: hidden;">
+                                        <?php foreach ($data as $v): ?>
                                         <div>
-                                            <img u="image" src="http://capitaland.com.vn/images/libraries/banner/homebanner/Homebanner-D1mension-HCMC.jpg?sfvrsn=8" />
-                                            <img u="thumb" src="http://capitaland.com.vn/images/libraries/banner/homebanner/Homebanner-D1mension-HCMC.tmb-.jpg?sfvrsn=1" />
-                                        </div><div>
-                                            <img u="image" src="http://capitaland.com.vn/images/libraries/banner/homebanner/ong-chen-lian-pang-len-nhan-giai-thuong.jpg?sfvrsn=16" />
-                                            <img u="thumb" src="http://capitaland.com.vn/images/libraries/banner/homebanner/ong-chen-lian-pang-len-nhan-giai-thuong.tmb-.jpg?sfvrsn=2" />
-                                        </div><div>
-                                            <img u="image" src="http://capitaland.com.vn/images/libraries/banner/homebanner/Feliz-en-Vista-home-banner.jpg?sfvrsn=6" />
-                                            <img u="thumb" src="http://capitaland.com.vn/images/libraries/banner/homebanner/Feliz-en-Vista-home-banner.tmb-.jpg?sfvrsn=1" />
-                                        </div><div>
-                                            <img u="image" src="http://capitaland.com.vn/images/libraries/banner/homebanner/seasons-avenue-homebanner-vn-03-03.jpg?sfvrsn=4" />
-                                            <img u="thumb" src="http://capitaland.com.vn/images/libraries/banner/homebanner/seasons-avenue-homebanner-vn-03-03.tmb-.jpg?sfvrsn=1" />
-                                        </div><div>
-                                            <img u="image" src="http://capitaland.com.vn/images/libraries/banner/homebanner/du-an-vista-verde-ho-chi-minh.jpg?sfvrsn=24" />
-                                            <img u="thumb" src="http://capitaland.com.vn/images/libraries/banner/homebanner/du-an-vista-verde-ho-chi-minh.tmb-.jpg?sfvrsn=3" />
-                                        </div><div>
-                                            <img u="image" src="http://capitaland.com.vn/images/libraries/banner/homebanner/the-krista-homebanner-25-25.jpg?sfvrsn=4" />
-                                            <img u="thumb" src="http://capitaland.com.vn/images/libraries/banner/homebanner/the-krista-homebanner-25-25.tmb-.jpg?sfvrsn=1" />
-                                        </div><div>
-                                            <img u="image" src="http://capitaland.com.vn/images/libraries/banner/homebanner/Du-an-the-vista-quan-2.jpg?sfvrsn=16" />
-                                            <img u="thumb" src="http://capitaland.com.vn/images/libraries/banner/homebanner/Du-an-the-vista-quan-2.tmb-.jpg?sfvrsn=3" />
-                                        </div><div>
-                                            <img u="image" src="http://capitaland.com.vn/images/libraries/banner/homebanner/mulberry-lane-homebanner-04.jpg?sfvrsn=4" />
-                                            <img u="thumb" src="http://capitaland.com.vn/images/libraries/banner/homebanner/mulberry-lane-homebanner-04.tmb-.jpg?sfvrsn=1" />
-                                        </div><div>
-                                            <img u="image" src="http://capitaland.com.vn/images/libraries/banner/homebanner/du-an-the-kris-vue-quan-2.jpg?sfvrsn=18" />
-                                            <img u="thumb" src="http://capitaland.com.vn/images/libraries/banner/homebanner/du-an-the-kris-vue-quan-2.tmb-.jpg?sfvrsn=3" />
+                                            <img u="image" src="<?php echo BASE_URL;?>/media/images/duan/<?php echo $v['image'];?>" />
+                                            <img u="thumb" src="<?php echo BASE_URL;?>/media/images/duan/<?php echo $v['image'];?>" />
                                         </div>
+                                        <?php endforeach;?>
                                     </div>
 
                                     <!-- Thumbnail Navigator Skin Begin -->
@@ -134,7 +118,7 @@
                                     <li>
                                         <a href="https://www.facebook.com/capitalandvietnamofficial/?pnref=story" target="_blank">
                                             <span data-sfref="[images|OpenAccessDataProvider]93d711d6-e855-6b4a-a72f-ff000008fdb8" class="sfImageWrapper">
-                                                <img src="<?php echo BASE_URL;?>/templates/img/icon-facebook.png" alt="Facebook CapitaLand Vietnam" style="border-width: 0px; border-style: solid;" displaymode="Original" title="icon-facebook">
+                                                <img src="<?php echo BASE_URL;?>/templates/img/icon-facebook.png" alt="Facebook Hưng Thịnh Vietnam" style="border-width: 0px; border-style: solid;" displaymode="Original" title="icon-facebook">
                                             </span>
                                         </a>
                                     </li> 
@@ -146,7 +130,7 @@
                                         </a>
                                     </li> 
                                     <li>
-                                        <a href="https://twitter.com/CapitaLand" target="_blank">
+                                        <a href="https://twitter.com/Hưng Thịnh" target="_blank">
                                             <span data-sfref="[images|OpenAccessDataProvider]79da11d6-e855-6b4a-a72f-ff000008fdb8" class="sfImageWrapper">
                                                 <img src="<?php echo BASE_URL;?>/templates/img/icon-twitter.png" alt="icon-twitter" style="border-width: 0px; border-style: solid;" displaymode="Original" title="icon-twitter">
                                             </span>
@@ -186,42 +170,33 @@
                                     <h3>TIN MỚI NHẤT</h3>
                                     <!-- 2014.2.724.40 -->
                                     <div id="corp_newsContainer">
+                                        <?php foreach ($dataTintuc as $v): ?>
                                         <div class="all">
                                             <div class="marginBottom">
-                                                <a id="ctl00_cprContent_C009_ctl00_ctl00_lvwNewsList_ctrl0_hpkTitle" href="http://capitaland.com.vn/news/l%e1%bb%85-h%e1%bb%99i-t%e1%ba%bft-t%e1%ba%a1i-the-oxygen">Lễ hội Tết tại The Oxygen</a>
+                                                <a id="ctl00_cprContent_C009_ctl00_ctl00_lvwNewsList_ctrl0_hpkTitle" href="<?php echo BASE_URL;?>"><?php echo $v['title'];?></a>
                                             </div>
                                             <div class="date">
-                                                Thg1 09 2017
+                                                <?php echo $v['post_time'];?>
                                             </div>
                                         </div>
                                         <div class="line"></div>
-
-                                        <div class="all">
-                                            <div class="marginBottom">
-                                                <a id="ctl00_cprContent_C009_ctl00_ctl00_lvwNewsList_ctrl1_hpkTitle" href="http://capitaland.com.vn/news/le-hoi-giang-sinh-tai-the-Oxygen">Lễ Hội Giáng Sinh tại The Oxygen</a>
-                                            </div>
-                                            <div class="date">
-                                                Thg12 08 2016
-                                            </div>
-                                        </div>
-                                        <div class="line"></div>
+                                        <?php endforeach; ?>
                                     </div>
-                                    <input id="ctl00_cprContent_C009_ctl00_ctl00_lvwNewsList_ClientState" name="ctl00_cprContent_C009_ctl00_ctl00_lvwNewsList_ClientState" type="hidden" autocomplete="off"><span id="ctl00_cprContent_C009_ctl00_ctl00_lvwNewsList" style="display:none;"></span>
-                                    <a id="cprContent_C009_ctl00_ctl00_hpkReadMore" class="more-news" href="http://capitaland.com.vn/news/">Xem thêm</a>
+                                    <a id="cprContent_C009_ctl00_ctl00_hpkReadMore" class="more-news" href="<?php echo BASE_URL;?>/index.php?controller=tintuc">Xem thêm</a>
                                 </div>
                             </div>
-                            <div class="sfContentBlock e-newsletter">
-                                <h3><span>Bản tin CapitaLand Việt Nam</span></h3> 
-                                <a href="http://capitaland.com.vn/e-newsletter">
-                                    <img alt="Bản tin CapitaLand Việt Nam" title="Bản tin CapitaLand Việt Nam" src="<?php echo BASE_URL;?>/templates/img/newsletter-vietnam.png" style="border-width: 0px; border-style: solid;">
+<!--                            <div class="sfContentBlock e-newsletter">
+                                <h3><span>Bản tin Hưng Thịnh Việt Nam</span></h3> 
+                                <a href="<?php echo BASE_URL;?>">
+                                    <img alt="Bản tin Hưng Thịnh Việt Nam" title="Bản tin Hưng Thịnh Việt Nam" src="<?php echo BASE_URL;?>/templates/img/newsletter-vietnam.png" style="border-width: 0px; border-style: solid;">
                                 </a>
                             </div>
                             <div class="sfContentBlock e-newsletter">
-                                <h3><span>Bản tin tập đoàn CapitaLand</span></h3> 
-                                <a href="http://inside.capitaland.com/" target="_blank">
-                                    <img alt="Bản tin tập đoàn CapitaLand" title="Bản tin tập đoàn CapitaLand" src="<?php echo BASE_URL;?>/templates/img/newsletter-group.png" style="display: block; margin-left: auto; margin-right: auto; padding: 0px 10px 10px; border-width: 0px; border-style: solid;"> 
+                                <h3><span>Bản tin tập đoàn Hưng Thịnh</span></h3> 
+                                <a href="<?php echo BASE_URL;?>" target="_blank">
+                                    <img alt="Bản tin tập đoàn Hưng Thịnh" title="Bản tin tập đoàn Hưng Thịnh" src="<?php echo BASE_URL;?>/templates/img/newsletter-group.png" style="display: block; margin-left: auto; margin-right: auto; padding: 0px 10px 10px; border-width: 0px; border-style: solid;"> 
                                 </a>
-                            </div>            
+                            </div>            -->
                         </div>
                     </div>
                 </div>
@@ -259,16 +234,16 @@
         </h3>
         <div class="sky-carousel-wrapper">
             <ul class="sky-carousel-container">
-                <?php for ($i = 1; $i <= 20; $i++): ?>
+                <?php foreach ($data as $v): ?>
                     <li class="item-project">
-                        <a href="http://capitaland.com.vn/our-projects/hochiminh/du-an-kris-vue-quan-2" title="KRIS VUE">
-                            <img src="<?php echo BASE_URL;?>/templates/img/kris-vue_bird-eyes-view-thumbnail.jpg" alt="KRIS VUE" title="KRIS VUE">
+                        <a href="<?php echo BASE_URL;?>/index.php?controller=chitietduan&id=<?php echo $v['id'];?>" title="<?php echo $v['title'];?>">
+                            <img src="<?php echo BASE_URL;?>/media/images/duan/<?php echo $v['image'];?>" alt="<?php echo $v['title'];?>" title="<?php echo $v['title'];?>">
                         </a>
                         <div class="sc-content">
-                            <h2><a href="http://capitaland.com.vn/our-projects/hochiminh/du-an-kris-vue-quan-2">KRIS VUE <?php echo $i; ?></a></h2>
+                            <h2><a href="<?php echo BASE_URL;?>/index.php?controller=chitietduan&id=<?php echo $v['id'];?>"><?php echo $v['title'];?></a></h2>
                         </div>
                     </li>
-                <?php endfor; ?>
+                <?php endforeach; ?>
             </ul>
         </div>
     </div>
@@ -314,6 +289,6 @@
 
     </div>
     <div class="latest-video viewall">
-        <a href="https://www.youtube.com/user/CapitaLandinVietnam" target="_blank">Xem tất cả video</a>
+        <a href="https://www.youtube.com/user/Hưng ThịnhinVietnam" target="_blank">Xem tất cả video</a>
     </div>
 </div>
