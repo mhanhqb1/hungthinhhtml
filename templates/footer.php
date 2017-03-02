@@ -1,11 +1,11 @@
         <div id="footer">
             <div class="footer">
                 <div class="footer-logo"> 
-                    <img alt="" src="<?php echo BASE_URL;?>/templates/img/footer_logo.png" width="45" height="55"> 
+                    <!--<img alt="" src="<?php echo BASE_URL;?>/templates/img/footer_logo.png" width="45" height="55">--> 
                 </div> 
                 <div class="footer-links"> 
                     <ul> 
-                        <li>
+<!--                        <li>
                             <a href="http://capitaland.com.vn/terms-and-conditions">?i?u kho?n &amp; ?i?u ki?n</a>
                         </li> 
                         <li>|</li> 
@@ -15,11 +15,11 @@
                         <li>|</li> 
                         <li>
                             <a href="http://capitaland.com.vn/cookie-policy">Lu?t Cookie</a>
-                        </li> 
+                        </li> -->
                     </ul> 
                 </div> 
                 <div class="footer-info"> 
-                    <p>B?n quy?n 2015 thu?c CapitaLand Limited</p> 
+                    <p>Bản quyền 2017 thuộc Hưng Thịnh</p> 
                 </div>
             </div>
         </div>
