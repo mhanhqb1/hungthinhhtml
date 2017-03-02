@@ -22,6 +22,7 @@ if(isset($_POST['submit'])){
         $vitri = $_POST['txtVitri'];
         $matbang = $_POST['txtMatbang'];
         $vitrihienthi = $_POST['txtVitrihienthi'];
+        $featured = $_POST['rdoFeatured'];
         
         $new = new DUAN;
         $new->setImage($image);
@@ -32,6 +33,7 @@ if(isset($_POST['submit'])){
         $new->setThongtin($thongtin);
         $new->setVitri($vitri);
         $new->setMatbang($matbang);
+        $new->setIsNoiThanh($featured);
         $new->insert();
         $upload = new UPLOAD($_FILES['fImage']['name'], $_FILES['fImage']['type'], $_FILES['fImage']['tmp_name'], $_FILES['fImage']['size']);
         $upload->process($image,'duan');

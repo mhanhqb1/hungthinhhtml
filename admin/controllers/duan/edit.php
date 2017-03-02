@@ -21,6 +21,7 @@ if(isset($_POST['submit'])){
         $vitri = $_POST['txtVitri'];
         $matbang = $_POST['txtMatbang'];
         $vitrihienthi = $_POST['txtVitrihienthi'];
+        $featured = $_POST['rdoFeatured'];
         
 	$new = new DUAN;
         $new->setTitle($title);
@@ -29,6 +30,7 @@ if(isset($_POST['submit'])){
         $new->setThongtin($thongtin);
         $new->setVitri($vitri);
         $new->setMatbang($matbang);
+        $new->setIsNoiThanh($featured);
         
         if($image){
             $new->setImage($image);

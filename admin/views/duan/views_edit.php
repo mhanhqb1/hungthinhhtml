@@ -38,10 +38,10 @@
                     <label>Hình ảnh mới:</label>
                     <input type="file" name="fNewImage"/>
                 </div>
-                <div class="form-group" style="">
+<!--                <div class="form-group" style="">
                     <label>Vị trí hiển thị ở trang chủ:</label>
                     <input type="number" class="form-control" name="txtVitrihienthi" value="<?php echo $data['vitrihienthi'];?>"/>
-                </div>
+                </div>-->
                 <div class="form-group">
                     <label>Giới thiệu:</label>
                     <textarea name="txtDescription" class="form-control" rows="8"><?php echo $data['description'];?></textarea>
@@ -57,6 +57,18 @@
                 <div class="form-group">
                     <label>Vị trí:</label>
                     <textarea name="txtVitri" class="form-control" rows="10"><?php echo $data['vitri'];?></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Thể loại: </label>
+                    <label class="radio-inline">
+                        <input name="rdoFeatured" value="1" <?php if ($data['is_noithanh'] == 1) echo 'Checked'; ?> type="radio">Nội thành
+                    </label>
+                    <label class="radio-inline">
+                        <input name="rdoFeatured" value="2" <?php if ($data['is_noithanh'] == 2) echo 'Checked'; ?> type="radio">Ngoại thành
+                    </label>
+                    <label class="radio-inline">
+                        <input name="rdoFeatured" value="3" <?php if ($data['is_noithanh'] == 3) echo 'Checked'; ?> type="radio">Officetel
+                    </label>
                 </div>
                 <button type="submit" name="submit" class="btn btn-success">Chỉnh sửa</button>
                 <button type="reset" class="btn btn-danger">Làm lại</button>

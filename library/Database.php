@@ -1,15 +1,15 @@
 <?php
 	define('PAGE_LIMIT', 9);
-        define('BASE_URL', 'http://test.localhost/hungthinhhtml');
-//        define('BASE_URL', 'http://localhost:8080/hungthinhhtml');
+//        define('BASE_URL', 'http://test.localhost/hungthinhhtml');
+        define('BASE_URL', 'http://localhost:8080/hungthinhhtml');
         define('BASE_URL_TITLE', 'www.tapdoanhungthinh.com');
         
 	class DATABASE{
 		protected $_hostname = "localhost";
 		protected $_hostuser = "root";
 		protected $_hostpass = "";
-		protected $_dbname = "hungthinhnew";
-//		protected $_dbname = "new_hungthinh";
+//		protected $_dbname = "hungthinhnew";
+		protected $_dbname = "new_hungthinh";
 		protected $_connect;
 		protected $_result;
 		

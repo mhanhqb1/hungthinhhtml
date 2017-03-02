@@ -26,10 +26,10 @@
                         <label>Logo:</label>
                         <input type="file" name="fImageLogo">
                     </div>
-                    <div class="form-group">
+<!--                    <div class="form-group">
                         <label>Hình ảnh hiển thị ở trang chủ:</label>
                         <input type="file" name="fImage">
-                    </div>
+                    </div>-->
                     <div class="form-group">
                         <label>Vị trí hiển thị ở trang chủ:</label>
                         <input type="number" class="form-control" name="txtVitrihienthi" />
@@ -49,6 +49,18 @@
                     <div class="form-group">
                         <label>Vị trí:</label>
                         <textarea name="txtTintuc" class="form-control" rows="10"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Thể loại: </label>
+                        <label class="radio-inline">
+                            <input name="rdoFeatured" value="1" checked="" type="radio">Nội thành
+                        </label>
+                        <label class="radio-inline">
+                            <input name="rdoFeatured" value="2" type="radio">Ngoại thành
+                        </label>
+                        <label class="radio-inline">
+                            <input name="rdoFeatured" value="3" type="radio">Officetel
+                        </label>
                     </div>
                     <button type="submit" name="submit" class="btn btn-default">Thêm</button>
                     <button type="reset" class="btn btn-default">Làm lại</button>

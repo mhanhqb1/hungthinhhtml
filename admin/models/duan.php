@@ -111,7 +111,7 @@
 		}
 
 		public function insert(){
-			$sql = "INSERT INTO duan(is_noithanh, title, logo, image, description, thongtin, vitri, matbang, vitrihienthi) values(('".$this->getIsNoiThanh()."', '".$this->getTitle()."', '".$this->getLogo()."', '".$this->getImage()."', '".$this->getDescription()."', '".$this->getThongtin()."', '".$this->getVitri()."', '".$this->getMatbang()."', '".$this->getVitrihienthi()."')";
+			$sql = "INSERT INTO duan(is_noithanh, title, logo, image, description, thongtin, vitri, matbang, vitrihienthi) values('".$this->getIsNoiThanh()."', '".$this->getTitle()."', '".$this->getLogo()."', '".$this->getImage()."', '".$this->getDescription()."', '".$this->getThongtin()."', '".$this->getVitri()."', '".$this->getMatbang()."', '".$this->getVitrihienthi()."')";
 			$this->query($sql);
 		}
 
