@@ -12,22 +12,7 @@ $data = $duan->listOne($id);
                         <div id="cprContent_TFA24BDA5002_Col00" class="sf_colsIn sf_2cols_1in_75">
                             <div id="cprContent_TFA24BDA5003">
                                 <div class="breadcrumb">
-                                    <div id="ctl00_cprContent_TFA24BDA5003_ctl00_ctl00_Breadcrumb" class="RadSiteMap RadSiteMap_">
-                                        <ul class="rsmFlow rsmLevel rsmOneLevel">
-                                            <li class="rsmItem sfBreadcrumbNavigation">
-                                                <a class="rsmLink" href="<?php echo BASE_URL;?>" title="CapitaLand là một trong những tập đoàn bất động sản lớn nhất Châu Á. Được niêm yết với trụ sở chính tại Singapore">Trang chủ</a>
-                                                <img src="<?php echo BASE_URL;?>/templates/img/arrow.png">
-                                            </li> 
-                                            <li class="rsmItem sfBreadcrumbNavigation">
-                                                <a class="rsmLink" href="<?php echo BASE_URL;?>/index.php?controller=duan">Dự án</a>
-                                                <img src="<?php echo BASE_URL;?>/templates/img/arrow.png">
-                                            </li> 
-                                            <li class="rsmItem sfNoBreadcrumbNavigation">
-                                                <a class="rsmLink" href="javascript: void(0)" title="Hochiminh">TP. HỒ CHÍ MINH</a>
-                                            </li>
-                                        </ul>
-                                        <input id="ctl00_cprContent_TFA24BDA5003_ctl00_ctl00_Breadcrumb_ClientState" name="ctl00_cprContent_TFA24BDA5003_ctl00_ctl00_Breadcrumb_ClientState" type="hidden" />
-                                    </div>
+                                    
                                 </div>
                                 <div class="clr"></div>
                             </div>
@@ -35,8 +20,8 @@ $data = $duan->listOne($id);
                                 <h2><?php echo $controller; ?></h2>
                             </div>
                             <div>
-                                <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-                                <script type="text/javascript" src="/theme/js/map.js"></script>
+<!--                                <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+                                <script type="text/javascript" src="/theme/js/map.js"></script> -->
                                 <script>
                                     var prevTabId = "Overview";
                                     function showTabsContent(id) {
@@ -65,9 +50,9 @@ $data = $duan->listOne($id);
                                                 $('#' + prevTab).removeClass("activeBg");
                                             }
 
-                                            if (id == 'Map') {
-                                                updateMap();
-                                            }
+//                                            if (id == 'Map') {
+//                                                updateMap();
+//                                            }
 
                                             prevTabId = id;
                                         }
@@ -113,10 +98,10 @@ $data = $duan->listOne($id);
 
                                         <div class="tabRowDiv">
                                             <div id="rowOverview_content" class="tabContentDiv" style="display: block;">
-                                                <script src="<?php echo BASE_URL;?>/templates/js/jssor.core.js"></script>
+<!--                                                <script src="<?php echo BASE_URL;?>/templates/js/jssor.core.js"></script>
                                                 <script src="<?php echo BASE_URL;?>/templates/js/jssor.utils.js"></script>
                                                 <script src="<?php echo BASE_URL;?>/templates/js/jssor.slider.js"></script>
-                                                <!--<script type="text/javascript" src="/theme/js/jssor.slider.js"></script>-->
+                                                
                                                 <script>
                                                     jQuery(document).ready(function ($) {
                                                         var options = {
@@ -208,7 +193,7 @@ $data = $duan->listOne($id);
 
                                                 <div id="slider1_container" style="position: relative; width: 750px;
                                                      height: 430px; overflow: hidden;">
-                                                    <!-- Loading Screen -->
+                                                     Loading Screen 
                                                     <div u="loading" style="position: absolute; top: 0px; left: 0px;">
                                                         <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
                                                              background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
@@ -218,7 +203,7 @@ $data = $duan->listOne($id);
                                                         </div>
                                                     </div>
 
-                                                    <!-- Slides Container -->
+                                                     Slides Container 
                                                     <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 665px; height: 420px;
                                                          overflow: hidden;">
                                                         <div>
@@ -271,9 +256,9 @@ $data = $duan->listOne($id);
                                                         </div>
                                                     </div>
 
-                                                    <!-- ThumbnailNavigator Skin Begin -->
+                                                     ThumbnailNavigator Skin Begin 
                                                     <div u="thumbnavigator" class="jssort11" style="position: absolute; width: 80px; height: 420px; left:670px; top:0px;">
-                                                        <!-- Thumbnail Item Skin Begin -->
+                                                         Thumbnail Item Skin Begin 
                                                         <style>
                                                             /* jssor slider thumbnail navigator skin 11 css */
                                                             /*
@@ -371,30 +356,29 @@ $data = $duan->listOne($id);
                                                                 <thumbnailtemplate style=" width: 100%; height: 100%; border: none;position:absolute; top: 0; left: 0;"></thumbnailtemplate>
                                                             </div>
                                                         </div>
-                                                        <!-- Thumbnail Item Skin End -->
+                                                         Thumbnail Item Skin End 
                                                     </div>
 
-                                                </div>
+                                                </div>-->
 
-                                                <div class="sfitemRichText" data-sf-field="Content" data-sf-ftype="LongText">
-                                                    <p style="text-align: justify;">&ldquo;Verde&rdquo; c&oacute; nghĩa l&agrave; xanh ng&aacute;t trong tiếng T&acirc;y Ban Nha,  Vista Verde được thiết kế như một vườm ươm xanh m&aacute;t, nhằm đem lại cho cư d&acirc;n cảm gi&aacute;c đang nghe bản giao hưởng của thi&ecirc;n nhi&ecirc;n. Nằm ở vị tr&iacute; chiến lược giữa khu h&agrave;nh ch&iacute;nh Quận 2 v&agrave; chỉ mất năm ph&uacute;t l&agrave; tiếp cận được với những tiện &iacute;ch cần thiết như si&ecirc;u thị Metro, khu mua sắm Parkson, rạp xem phim Lotte Cinema, bệnh viện Ph&uacute;c An Khang v&agrave; nhiều trường học quốc tế uy t&iacute;n như ACG International School. Vista Verde cũng chỉ c&aacute;ch c&aacute;c quận l&acirc;n cận như Quận 7, quận 1 c&oacute; mười ph&uacute;t rất tiện lợi nhờ hầm Thủ Thi&ecirc;m, cầu Thủ Thi&ecirc;m, cầu S&agrave;i G&ograve;n v&agrave; cầu Ph&uacute; Mỹ. Dự &aacute;n được l&ecirc;n kế hoạch sẽ ho&agrave;n thiện v&agrave;o giữa năm 2017.</p> <p style="text-align: justify;">Vista Verde cung cấp cho cư d&acirc;n nhiều tiện &iacute;ch vượt trội như ph&ograve;ng tập gym c&oacute; tầm nh&igrave;n 360&deg;, hồ bơi sang trọng như resort, ghế thư gi&atilde;n, trảng cỏ chạy bộ, v&agrave; s&acirc;n tennis. Ngo&agrave;i ra, tầng trệt được thiết kế như một thị trấn mua sắm sẽ cho cư d&acirc;n nhiều tiện lợi với nhiều cửa h&agrave;ng th&ocirc;ng dụng. Vista Verde c&oacute; hơn 30 kiểu căn hộ được thiết kế ho&agrave;n chỉnh, bao gồm những căn hộ đặc biệt như căn hộ th&ocirc;ng tầng (duplex) v&agrave; những căn hộ với nhiều kh&ocirc;ng gian ri&ecirc;ng tư ngăn c&aacute;ch. V&igrave; ch&uacute;ng t&ocirc;i thiết kế cho m&ocirc;i trường sống hiện đại, n&ecirc;n c&aacute;c kiểu căn hộ đều c&oacute; ph&ograve;ng kh&aacute;ch v&agrave; ph&ograve;ng ăn rộng r&atilde;i, gi&oacute; trời th&ocirc;ng tho&aacute;ng v&agrave; c&oacute; ban-c&ocirc;ng với tầm nh&igrave;n đẹp.</p> <p style="text-align: justify;">
-                                                        Website:&nbsp;<a href="http://vistaverde.com.vn"><span style="color: #0000e6;">http://vistaverde.com.vn</span></a></p>
+                                                <div class="sfitemRichText">
+                                                    <?php echo $data['description'];?>   
                                                 </div>
                                             </div>
                                             <div id="rowFactsheet_content" class="tabContentDiv" style="display: none;">
-                                                <div class="sfitemRichText" data-sf-field="Factsheet" data-sf-ftype="LongText">
-                                                    <table> <tbody> <tr> <td valign="top" style="text-align: justify;"> <p><strong>Dự &aacute;n</strong></p> </td> <td valign="top"> <p>Vista Verde</p> </td> </tr> <tr> <td valign="top"> <p><strong>Chủ đầu tư</strong></p> </td> <td valign="top"> <p>C&ocirc;ng ty CapitaLand &ndash; Thien Duc</p> </td> </tr> <tr> <td valign="top"> <p><strong>Vị tr&iacute;</strong></p> </td> <td valign="top"> <p>Đường Đồng Văn Cống, phường Thạnh Mỹ Lợi, Quận 2, TPHCM</p> </td> </tr> <tr> <td valign="top"> <p><strong>H&igrave;nh thức sở hữu</strong></p> </td> <td valign="top"> <p>Sở hữu vĩnh viễn đối người Việt Nam, cho thu&ecirc; d&agrave;i hạn (50 năm) đối với người nước ngo&agrave;i</p> </td> </tr> <tr> <td valign="top"> <p><strong>Diện t&iacute;ch dự &aacute;n</strong></p> </td> <td valign="top"> <p>34.056 m<sup>2</sup></p> </td> </tr> <tr> <td valign="top"> <p><strong>Diện t&iacute;ch căn hộ</strong></p> </td> <td valign="top"> <p>1 Ph&ograve;ng ngủ 45 &ndash; 54 m<sup>2</sup></p> <p>2 Ph&ograve;ng ngủ: từ 74 &ndash; 89 m<sup>2</sup></p> <p>3 Ph&ograve;ng ngủ: từ 107 &ndash; 118 m<sup>2</sup></p> </td> </tr> <tr> <td valign="top"> <p><strong>Tổng số căn hộ</strong></p> </td> <td valign="top"> <p>1.152 căn</p> </td> </tr> <tr> <td valign="top"> <p><strong>C&aacute;c dịch vụ tiện &iacute;ch</strong></p> </td> <td valign="top"> <ul> <li>Hồ bơi</li> <li>Thảm cỏ tr&ecirc;n m&aacute;i</li> <li>Ốc đảo thư gi&atilde;n</li> <li>Vườn treo Babylon</li> <li>S&acirc;n tập Tennis </li> <li>S&acirc;n chơi trẻ em</li> <li>Thư viện</li> <li>Vườn tĩnh t&acirc;m</li> <li>Khu BBQ</li> </ul> </td> </tr> </tbody> </table> <p>&nbsp;</p>
+                                                <div class="sfitemRichText">
+                                                    <?php echo $data['thongtin'];?>
                                                 </div>
                                             </div>
                                             <div id="rowSiteplan_content" class="tabContentDiv" style="display: none;">
-                                                <div class="sfSnglRelatedItmWrp">
-                                                    <div class="sfrelatedItmWrp">
-                                                        <img src='http://capitaland.com.vn/images/libraries/projects/vista-verde/vv_siteplan.jpg?sfvrsn=6' alt='Vista Verde SitePlan' title='VV_siteplan' />
-                                                    </div>
+                                                <div class="sfitemRichText">
+                                                    <?php echo $data['matbang'];?>
                                                 </div>
                                             </div>
                                             <div id="rowMap_content" class="tabContentDiv" style="display: none;">
-                                                <div id="map-canvas-project"></div>
+                                                <div class="sfitemRichText">
+                                                    <?php echo $data['vitri'];?>
+                                                </div>
                                             </div>
 
                                         </div>
@@ -406,13 +390,13 @@ $data = $duan->listOne($id);
 
                                 </div>
                                 <script>
-                                    function updateMap()
-                                    {
-                                        LoadMap('map-canvas-project', 18, locations);
-                                    }
-                                    jQuery(document).ready(function () {
-                                        updateMap();
-                                    });
+//                                    function updateMap()
+//                                    {
+//                                        LoadMap('map-canvas-project', 18, locations);
+//                                    }
+//                                    jQuery(document).ready(function () {
+//                                        updateMap();
+//                                    });
                                 </script>
 
 
