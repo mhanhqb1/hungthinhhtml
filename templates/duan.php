@@ -1,14 +1,16 @@
 <?php 
 $duan = new DUAN;
-$data = $duan->listAll();
 $subMenu = !empty($_GET['cate']) ? $_GET['cate'] : '';
-if (!empty($subMenu) && $subMenu == 2) {
+if (!empty($subMenu) && $subMenu == 1) {
     $controller = 'TP.Hồ Chí Minh';
-} else if (!empty($subMenu) && $subMenu == 1) {
-    $controller = 'Hà Nội';
+} else if (!empty($subMenu) && $subMenu == 2) {
+    $controller = 'Các tỉnh khác';
+} else if (!empty($subMenu) && $subMenu == 3) {
+    $controller = 'Officetel';
 } else {
     $controller = 'Dự án';
 }
+$data = $duan->listAll($subMenu);
 ?>
 <div id="container">
     <div class="sf_cols">

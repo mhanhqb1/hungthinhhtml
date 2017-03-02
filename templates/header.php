@@ -58,10 +58,10 @@
                                         <div class="headbottom">
                                             <ul class="headmenu"> 
                                                 <li>
-                                                    <a href="<?php echo BASE_URL;?>" target="_blank">Tập đoàn Hưng Thịnh </a>
+                                                    <a href="<?php echo BASE_URL;?>/index.php?controller=gioithieu" target="_blank">Tập đoàn Hưng Thịnh </a>
                                                 </li> 
                                                 <li>
-                                                    <a href="<?php echo BASE_URL;?>">Nghề nghiệp cùng chúng tôi</a>
+                                                    <a href="<?php echo BASE_URL;?>/index.php?controller=gioithieu">Nghề nghiệp cùng chúng tôi</a>
                                                 </li> 
                                                 <li>
                                                     <a href="<?php echo BASE_URL;?>/index.php?controller=lienhe">Liên hệ </a>
@@ -79,6 +79,17 @@
 
                                                 <li class="our-projects">
                                                     <a href="<?php echo BASE_URL;?>/index.php?controller=duan">Dự án</a>
+                                                    <ul id="cprHeader_T3A17860F014_ctl00_ctl00_ctl02_ctl02_childNodesContainer">
+                                                        <li class="hochiminh">
+                                                            <a href="<?php echo BASE_URL;?>/index.php?controller=duan&cate=1">TP. HỒ CHÍ MINH</a>
+                                                        </li>
+                                                        <li class="hanoi">
+                                                            <a href="<?php echo BASE_URL;?>/index.php?controller=duan&cate=2">CÁC TỈNH KHÁC</a>
+                                                        </li>
+                                                        <li class="hanoi">
+                                                            <a href="<?php echo BASE_URL;?>/index.php?controller=duan&cate=3">OFFICETEL</a>
+                                                        </li>
+                                                    </ul>
                                                 </li>
 
                                                 <li class="register-interest">

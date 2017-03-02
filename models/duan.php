@@ -80,8 +80,12 @@
 			return $data;
 		}
 
-		public function listAll(){
-			$sql = "SELECT * FROM duan ORDER BY id DESC";
+		public function listAll($isNoithanh){
+			$sql = "SELECT * FROM duan";
+                        if (!empty($isNoithanh)) {
+                            $sql .= " WHERE is_noithanh = {$isNoithanh}";
+                        }
+                        $sql .= " ORDER BY id DESC";
 			$this->query($sql);
 			$new = '';
 			if($this->num_rows() != 0){

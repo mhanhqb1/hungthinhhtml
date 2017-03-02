@@ -1,11 +1,14 @@
 <div class="sfNavWrp sfNavTreeviewWrp submenu ">
 
     <ul id="cprContent_T728A4C8D001_ctl00_ctl00_navigationUl" class="sfNavTreeview sfNavList">
-        <li <?php echo (!empty($subMenu) && $subMenu == 2) ? "class='active'" : "";?>>
-            <a href="<?php echo BASE_URL; ?>/index.php?controller=duan&cate=2">TP. HỒ CHÍ MINH</a>
-        </li> 
         <li <?php echo (!empty($subMenu) && $subMenu == 1) ? "class='active'" : "";?>>
-            <a href="<?php echo BASE_URL; ?>/index.php?controller=duan&cate=1">HÀ NỘI</a>
+            <a href="<?php echo BASE_URL; ?>/index.php?controller=duan&cate=1">TP. HỒ CHÍ MINH</a>
+        </li> 
+        <li <?php echo (!empty($subMenu) && $subMenu == 2) ? "class='active'" : "";?>>
+            <a href="<?php echo BASE_URL; ?>/index.php?controller=duan&cate=2">CÁC TỈNH KHÁC</a>
+        </li>
+        <li <?php echo (!empty($subMenu) && $subMenu == 3) ? "class='active'" : "";?>>
+            <a href="<?php echo BASE_URL; ?>/index.php?controller=duan&cate=3">OFFICETEL</a>
         </li>
     </ul>
 </div>
