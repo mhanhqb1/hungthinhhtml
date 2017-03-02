@@ -16,26 +16,22 @@ if(isset($_POST['submit'])){
 	if($_POST['txtDescription'] != ''){
 		$description = $_POST['txtDescription'];
 	}else{
-		$err[] = 'Vui lòng chọn vị trí!';
+		$err[] = 'Vui lòng nhập mô tả!';
 	}
 	if($_POST['txtDetail'] != ''){
 		$detail = $_POST['txtDetail'];
 	}else{
-		$err[] = 'Vui lòng chọn vị trí!';
+		$err[] = 'Vui lòng nhập nội dung!';
 	}
 	if($_POST['txtTitle'] != ''){
 		$title = $_POST['txtTitle'];
 	}else{
-		$err[] = 'Vui lòng chọn vị trí!';
+		$err[] = 'Vui lòng nhập title!';
 	}
-	$featured = $_POST['rdoFeatured'];
-	$istintuc = $_POST['rdoTintuc'];
 	if($check && $description && $detail && $title){
 		$new->setTitle($title);
 		$new->setDetail($detail);
 		$new->setDescription($description);
-		$new->setIsFeatured($featured);
-		$new->setIsTintuc($istintuc);
 		if($image){
 			$new->setImage($image);
 			if($new->checkImageExist()){

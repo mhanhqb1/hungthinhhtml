@@ -22,14 +22,6 @@
                     <label>Tiêu đề:</label>
                     <input type="text" class="form-control" name="txtTitle" value="<?php echo $data['title'];?>"/>
                 </div>
-                <div class="form-group">
-                    <label>Title tag:</label>
-                    <input type="text" class="form-control" name="txtTitleTag" value="<?php echo $data['title_tag'];?>"/>
-                </div>
-                <div class="form-group">
-                    <label>Meta description:</label>
-                    <input type="text" class="form-control" name="txtMetaDescription" value="<?php echo $data['meta_description'];?>"/>
-                </div>
 				<div class="form-label">
 					<label>Hình ảnh cũ:</label>
                     <img src="../media/images/news/<?php echo $data['image'];?>" width="200">
@@ -38,10 +30,6 @@
 					<label>Hình ảnh mới:</label>
                     <input type="file" name="fNewImage"/>
                 </div>
-                <div class="form-group">
-                    <label>Image Alt:</label>
-                    <input type="text" class="form-control" name="txtImageAlt" value="<?php echo $data['image_alt'];?>"/>
-                </div>
 				<div class="form-group">
                     <label>Giới thiệu:</label>
                     <textarea name="txtDescription" class="form-control" rows="8"><?php echo $data['description'];?></textarea>
@@ -49,27 +37,6 @@
 				<div class="form-group">
                     <label>Nội dung:</label>
                     <textarea name="txtDetail" class="form-control" rows="15"><?php echo $data['detail'];?></textarea>
-                </div>
-                <div class="form-group">
-                    <label>The loai: </label>
-                    <label class="radio-inline">
-                        <input name="rdoTintuc" value="1" <?php if($data['is_tintuc'] == 1) echo 'Checked'; ?> type="radio">Tin tuc
-                    </label>
-                    <label class="radio-inline">
-                        <input name="rdoTintuc" value="0" <?php if($data['is_tintuc'] == 0) echo 'Checked'; ?> type="radio">Phong thuy
-                    </label>
-                    <label class="radio-inline">
-                        <input name="rdoTintuc" value="2" <?php if($data['is_tintuc'] == 2) echo 'Checked'; ?> type="radio">Tiến độ xây dựng
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label>Nổi bật: </label>
-                    <label class="radio-inline">
-                        <input name="rdoFeatured" value="1" <?php if($data['is_featured'] == 1) echo 'Checked'; ?> type="radio">Có
-                    </label>
-                    <label class="radio-inline">
-                        <input name="rdoFeatured" value="0" <?php if($data['is_featured'] == 0) echo 'Checked'; ?> type="radio">Không
-                    </label>
                 </div>
                 <button type="submit" name="submit" class="btn btn-default">Chỉnh sửa</button>
                 <button type="reset" class="btn btn-default">Làm lại</button>

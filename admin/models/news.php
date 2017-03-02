@@ -4,11 +4,6 @@
         protected $_description;
         protected $_detail;
         protected $_image;
-        protected $_isFeatured;
-        protected $_isTintuc;
-        protected $_imageAlt;
-        protected $_titleTag;
-        protected $_metaDescription;
 
         public function __construct(){
             $this->connect();   
@@ -111,15 +106,15 @@
         }
 
         public function insert(){
-            $sql = "INSERT INTO news(title, image, description, detail, is_featured, is_tintuc, image_alt, title_tag, meta_description) values('".$this->getTitle()."', '".$this->getImage()."', '".$this->getDescription()."','".$this->getDetail()."', '".$this->getIsFeatured()."', '".$this->getIsTintuc()."', '".$this->getImageAlt()."', '".$this->getTitleTag()."', '".$this->getMetaDescription()."')";
+            $sql = "INSERT INTO news(title, image, description, detail) values('".$this->getTitle()."', '".$this->getImage()."', '".$this->getDescription()."','".$this->getDetail()."')";
             $this->query($sql);
         }
 
         public function update($id, $image=''){
             if($image != ''){
-                $sql = "UPDATE news SET image='".$this->getImage()."', description='".$this->getDescription()."', is_featured='".$this->getIsFeatured()."', is_tintuc='".$this->getIsTintuc()."', title='".$this->getTitle()."', detail='".$this->getDetail()."', image_alt='".$this->getImageAlt()."', title_tag='".$this->getTitleTag()."', meta_description='".$this->getMetaDescription()."' WHERE news_id='".$id."'";
+                $sql = "UPDATE news SET image='".$this->getImage()."', description='".$this->getDescription()."', title='".$this->getTitle()."', detail='".$this->getDetail()."' WHERE news_id='".$id."'";
             }else{
-                $sql = "UPDATE news SET description='".$this->getDescription()."', is_featured='".$this->getIsFeatured()."', is_tintuc='".$this->getIsTintuc()."', title='".$this->getTitle()."', detail='".$this->getDetail()."', image_alt='".$this->getImageAlt()."', title_tag='".$this->getTitleTag()."', meta_description='".$this->getMetaDescription()."' WHERE news_id='".$id."'";
+                $sql = "UPDATE news SET description='".$this->getDescription()."', title='".$this->getTitle()."', detail='".$this->getDetail()."' WHERE news_id='".$id."'";
             }
             $this->query($sql);
         }
