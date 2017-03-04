@@ -173,7 +173,7 @@ $dataTintuc = $tintuc->listAll(4);
                                         <?php foreach ($dataTintuc as $v): ?>
                                         <div class="all">
                                             <div class="marginBottom">
-                                                <a id="ctl00_cprContent_C009_ctl00_ctl00_lvwNewsList_ctrl0_hpkTitle" href="<?php echo BASE_URL;?>"><?php echo $v['title'];?></a>
+                                                <a id="ctl00_cprContent_C009_ctl00_ctl00_lvwNewsList_ctrl0_hpkTitle" href="<?php echo BASE_URL;?>/index.php?controller=chitiettintuc&id=<?php echo $v['news_id'];?>"><?php echo $v['title'];?></a>
                                             </div>
                                             <div class="date">
                                                 <?php echo $v['post_time'];?>
