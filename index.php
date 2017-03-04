@@ -50,6 +50,11 @@ if(isset($_GET['controller'])){
 			require_once "templates/chitietduan.php";
 
 			break;
+                case 'chitiettintuc':
+
+			require_once "templates/chitiettintuc.php";
+
+			break;
 
 		default:
 
