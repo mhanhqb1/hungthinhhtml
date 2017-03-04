@@ -4,10 +4,10 @@
         <meta charset="utf-8">    
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-            Pages
+            Sàn giao dịch Hưng Thịnh Land
         </title>
-        <link href="/favicon.ico" type="image/x-icon" rel="icon">
-        <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon">
+        <link href="<?php echo BASE_URL;?>/Icon-SGD.png" type="image/x-icon" rel="icon">
+        <link href="<?php echo BASE_URL;?>/Icon-SGD.png" type="image/x-icon" rel="shortcut icon">
         <link rel="stylesheet" href="<?php echo BASE_URL;?>/templates/css/normalize.css">    
         <link rel="stylesheet" href="<?php echo BASE_URL;?>/templates/css/style.css">    
         <link rel="stylesheet" href="<?php echo BASE_URL;?>/templates/css/style-responsive.css">    
