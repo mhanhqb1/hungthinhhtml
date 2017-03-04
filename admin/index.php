@@ -1,6 +1,6 @@
 <?php
 session_start();
-// error_reporting(0);
+ error_reporting(0);
 ob_start();
 if(!isset($_SESSION['level']) || $_SESSION['level'] != 2){
     header("Location: login.php");

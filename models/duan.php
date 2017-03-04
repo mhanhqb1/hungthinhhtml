@@ -8,6 +8,7 @@
 		protected $_vitri;
 		protected $_matbang;
 		protected $_vitrihienthi;
+		protected $_isNoiThanh;
 		
 		public function __construct(){
 			$this->connect();	
@@ -17,56 +18,99 @@
 			$this->_image = $i;
 		}
 		public function getImage(){
-			return $this->_image;
+                    if (empty($this->_image)) {
+                        return '';
+                    } else {
+                        return $this->_image;
+                    }
+		}
+                
+		public function setIsNoiThanh($i){
+			$this->_isNoiThanh = $i;
+		}
+		public function getIsNoiThanh(){
+                    if (empty($this->_isNoiThanh)) {
+                        return '';
+                    } else {
+                        return $this->_isNoiThanh;
+                    }
 		}
 
 		public function setLogo($i){
 			$this->_logo = $i;
 		}
 		public function getLogo(){
-			return $this->_logo;
+                    if (empty($this->_logo)) {
+                        return '';
+                    } else {
+                        return $this->_logo;
+                    }
 		}
 
 		public function setTitle($p){
 			$this->_title = $p;
 		}
 		public function getTitle(){
-			return $this->_title;
+                    if (empty($this->_title)) {
+                        return '';
+                    } else {
+                        return $this->_title;
+                    }
 		}
 
 		public function setDescription($p){
-			$this->_description = $p;
+                        $this->_description = $p;
 		}
 		public function getDescription(){
-			return $this->_description;
+                    if (empty($this->_description)) {
+                        return '';
+                    } else {
+                        return $this->_description;
+                    }
 		}
 
 		public function setThongtin($s){
 			$this->_thongtin = $s;
 		}
 		public function getThongtin(){
-			return $this->_thongtin;
+                    if (empty($this->_thongtin)) {
+                        return '';
+                    } else {
+                        return $this->_thongtin;
+                    }
 		}
 
 		public function setVitri($s){
 			$this->_vitri = $s;
 		}
 		public function getVitri(){
-			return $this->_vitri;
+                    if (empty($this->_vitri)) {
+                        return '';
+                    } else {
+                        return $this->_vitri;
+                    }
 		}
 
 		public function setMatbang($s){
 			$this->_matbang = $s;
 		}
 		public function getMatbang(){
-			return $this->_matbang;
+                    if (empty($this->_matbang)) {
+                        return '';
+                    } else {
+                        return $this->_matbang;
+                    }
 		}
 
 		public function setVitrihienthi($s){
 			$this->_vitrihienthi = $s;
 		}
 		public function getVitrihienthi(){
-			return $this->_vitrihienthi;
+                    if (empty($this->_vitrihienthi)) {
+                        return '';
+                    } else {
+                        return $this->_vitrihienthi;
+                    }
 		}
 		/*--------------------------FUNCITONS--------------------------*/
 
@@ -107,19 +151,21 @@
 		}
 
 		public function insert(){
-			$sql = "INSERT INTO duan(title, logo, image, description, thongtin, vitri, matbang, vitrihienthi) values('".$this->getTitle()."', '".$this->getLogo()."', '".$this->getImage()."', '".$this->getDescription()."', '".$this->getThongtin()."', '".$this->getVitri()."', '".$this->getMatbang()."', '".$this->getVitrihienthi()."')";
+			$sql = "INSERT INTO duan(is_noithanh, title, logo, image, description, thongtin, vitri, matbang, vitrihienthi) values('".$this->getIsNoiThanh()."', '".$this->getTitle()."', '".$this->getLogo()."', '".$this->getImage()."', '".$this->getDescription()."', '".$this->getThongtin()."', '".$this->getVitri()."', '".$this->getMatbang()."', '".$this->getVitrihienthi()."')";
 			$this->query($sql);
 		}
 
 		public function update($id){
                     $sql = 'UPDATE duan SET';
-                    if (!empty($this->getImage())) {
-                        $sql .= " image='".$this->getImage()."',";
+                    $image = $this->getImage();
+                    if (!empty($image)) {
+                        $sql .= " image='".$image."',";
                     }
-                    if (!empty($this->getLogo())) {
-                        $sql .= " logo='".$this->getLogo()."',";
+                    $logo = $this->getLogo();
+                    if (!empty($logo)) {
+                        $sql .= " logo='".$logo."',";
                     }
-                    $sql .= " description='".$this->getDescription()."', title='".$this->getTitle()."', thongtin='".$this->getThongtin()."', vitri='".$this->getVitri()."', matbang='".$this->getMatbang()."', vitrihienthi='".$this->getVitrihienthi()."' WHERE id='".$id."'";
+                    $sql .= " is_noithanh='".$this->getIsNoiThanh()."', description='".$this->getDescription()."', title='".$this->getTitle()."', thongtin='".$this->getThongtin()."', vitri='".$this->getVitri()."', matbang='".$this->getMatbang()."', vitrihienthi='".$this->getVitrihienthi()."' WHERE id='".$id."'";
 			
                     $this->query($sql);
 		}
