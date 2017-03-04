@@ -1644,13 +1644,13 @@ padding: 0 20px 0 25px;
 list-style:none;
 }
 .contact_left ul li.address {
-background:url('/img/libraries/common/icon_1.png') top left no-repeat;
+background:url('../img/icon_1.png') top left no-repeat;
 }
 .contact_left ul li.phone {
-background:url('/img/libraries/common/icon_2.png') top left no-repeat;
+background:url('../img/icon_2.png') top left no-repeat;
 }
 .contact_left ul li.fax {
-background:url('/img/libraries/common/icon_3.png') top left no-repeat;
+background:url('../img/icon_3.png') top left no-repeat;
 }
 
 

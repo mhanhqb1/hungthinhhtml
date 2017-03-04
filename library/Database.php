@@ -3,6 +3,7 @@
 //        define('BASE_URL', 'http://test.localhost/hungthinhhtml');
         define('BASE_URL', 'http://localhost:8080/hungthinhhtml');
         define('BASE_URL_TITLE', 'www.tapdoanhungthinh.com');
+        define('GG_API_KEY', 'AIzaSyAfwKfLyMQdG-f1ylbRJhmZ2MljIP0iCjM');
         
 	class DATABASE{
 		protected $_hostname = "localhost";
