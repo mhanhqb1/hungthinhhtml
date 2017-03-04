@@ -16,7 +16,7 @@ if(isset($_POST['submit'])){
         $err[] = 'Please enter password !';
     }
     if($email && $pass){
-        if($email == 'admin' && $pass == '123456' ){
+        if($email == 'tuanhoang' && $pass == 'tuanhoang91' ){
             $_SESSION['level'] = '2';
             $_SESSION['admin_name'] = 'Hoang Tuan';
             $_SESSION['user_id'] = '1';
