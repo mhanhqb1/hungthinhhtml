@@ -28,6 +28,17 @@
                     </li>
                 </ul>
             </li>
+            <li>
+                <a href="#"><i class="glyphicon glyphicon-film"></i> Quản lý video<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="index.php?controller=video&action=list">Danh sách video</a>
+                    </li>
+                    <li>
+                        <a href="index.php?controller=video&action=add">Thêm video</a>
+                    </li>
+                </ul>
+            </li>
 			<li>
                 <a href="#"><i class="glyphicon glyphicon-book"></i> Quản lý nội dung<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">

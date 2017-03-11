@@ -28,6 +28,9 @@ if(isset($_GET['controller'])){
 		case 'phonenumber':
 			require_once "controllers/phonenumber/controller.php";
 			break;
+		case 'video':
+			require_once "controllers/video/controller.php";
+			break;
 		default:
 			# code...
 			break;

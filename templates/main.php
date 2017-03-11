@@ -3,6 +3,8 @@ $duan = new DUAN;
 $data = $duan->listAll();
 $tintuc = new NEWS;
 $dataTintuc = $tintuc->listAll(4);
+$video = new VIDEO;
+$dataVideo = $video->listAll(5);
 ?>
 <div id="container">
     <div class="sf_cols">
@@ -247,6 +249,7 @@ $dataTintuc = $tintuc->listAll(4);
             </ul>
         </div>
     </div>
+    <?php if (!empty($dataVideo)): ?>
     <div id="cprContent_T979D2F30006" class="latest-video">
         <link rel="stylesheet" href="<?php echo BASE_URL;?>/templates/css/prettyPhoto.css">
         <script src="<?php echo BASE_URL;?>/templates/js/jquery.prettyPhoto.js"></script>
@@ -270,25 +273,26 @@ $dataTintuc = $tintuc->listAll(4);
         </h3>
         <div id="avs_gallery" class="avs_gallery video avs_responsive">
             <div class="gallery ">
-                <?php for ($i = 1; $i <= 5; $i++): ?>
-                    <div class="avs_thumb <?php echo ($i % 2 == 0) ? 'odd' : 'even'; ?>" style="width:150px;" title="Feliz en Vista - Dệt nên vẻ đẹp ngày mai">
-                        <a href="http://www.youtube.com/watch?v=DTQmoABMjKs" rel="prettyPhoto" title="Feliz en Vista - Dệt nên vẻ đẹp ngày mai">
+                <?php foreach ($dataVideo as $k => $v): ?>
+                    <div class="avs_thumb <?php echo ($k % 2 == 0) ? 'even' : 'odd'; ?>" style="width:150px;" title="<?php echo $v['title']; ?>">
+                        <a href="<?php echo $v['link']; ?>" rel="prettyPhoto" title="<?php echo $v['title']; ?>">
                             <div class="avs_thumb_inner">
                                 <div class="avs_img_container">
                                     <img class="arrow" src="<?php echo BASE_URL;?>/templates/img/play.png" border="0"> 
-                                    <img class="image" src="<?php echo BASE_URL;?>/templates/img/default.jpg" style="width:150px; height:95px;" border="0">
+                                    <img class="image" src="<?php echo BASE_URL;?>/media/images/video/<?php echo $v['image']; ?>" style="width:150px; height:95px;" border="0">
                                 </div> 
-                                <span class="title">Feliz en Vista - Dệt nên vẻ đẹp...</span> 
+                                <span class="title"><?php echo $v['title']; ?></span> 
                             </div>
                         </a>
                     </div>
-                <?php endfor; ?>
+                <?php endforeach; ?>
             </div>
             <div style="clear:both"></div>
         </div>
 
     </div>
-    <div class="latest-video viewall">
+<!--    <div class="latest-video viewall">
         <a href="https://www.youtube.com/user/Hưng ThịnhinVietnam" target="_blank">Xem tất cả video</a>
-    </div>
+    </div>-->
+    <?php endif; ?>
 </div>
