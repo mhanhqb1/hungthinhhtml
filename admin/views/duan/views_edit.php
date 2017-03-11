@@ -56,7 +56,7 @@
                 </div>
                 <div class="form-group">
                     <label>Vị trí:</label>
-                    <textarea name="txtVitri" class="form-control" rows="10"><?php echo $data['vitri'];?></textarea>
+                    <input type="text" class="form-control" name="txtVitri" value="<?php echo $data['vitri'];?>"/>
                 </div>
                 <div class="form-group">
                     <label>Thể loại: </label>

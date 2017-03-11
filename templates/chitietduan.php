@@ -1,7 +1,7 @@
 <?php 
 $duan = new DUAN;
 $id = $_GET['id'];
-$data = $duan->listOne($id);
+$data = $duan->listOne($id); 
 ?>
 <div id="container">
     <div class="sf_cols">
@@ -50,9 +50,9 @@ $data = $duan->listOne($id);
                                                 $('#' + prevTab).removeClass("activeBg");
                                             }
 
-//                                            if (id == 'Map') {
-//                                                updateMap();
-//                                            }
+                                            if (id == 'Map') {
+                                                updateMap();
+                                            }
 
                                             prevTabId = id;
                                         }
@@ -62,11 +62,11 @@ $data = $duan->listOne($id);
 
                                 <div id="cprContent_ctl04_ctl00_ctl00_detailContainer">
 
-                                    <h2>VISTA VERDE</h2>
+                                    <h2><?php echo $data['title'];?></h2>
                                     <div class="projectDetail" data-sf-provider='OpenAccessProvider' data-sf-id='c2ca10d6-e855-6b4a-a72f-ff000008fdb8' data-sf-type="Telerik.Sitefinity.DynamicModules.Model.DynamicContent">
 
                                         <div class="projectLogo">
-                                            <a href='http://vistaverde.com.vn' target='_blank'><img src='<?php echo BASE_URL;?>/media/images/duan/<?php echo $data['logo'];?>' alt='VV' title='VV' /></a>
+                                            <a href='#' onclick="return false;" target='_blank'><img src='<?php echo BASE_URL;?>/media/images/duan/<?php echo $data['logo'];?>' alt='VV' title='VV' /></a>
                                         </div>
                                         <div class="tabContainer">
                                             <ul>
@@ -376,27 +376,31 @@ $data = $duan->listOne($id);
                                                 </div>
                                             </div>
                                             <div id="rowMap_content" class="tabContentDiv" style="display: none;">
-                                                <div class="sfitemRichText">
-                                                    <?php echo $data['vitri'];?>
-                                                </div>
+                                                <div id="map-canvas-project"></div>
                                             </div>
 
                                         </div>
                                         <script>
-                                            var locations = ['10.776919', '106.756709'];
+                                            <?php if (!empty($data['vitri'])): ?>
+                                                var locations = [<?php echo $data['vitri'];?>];
+                                            <?php else: ?>
+                                                var locations = [10.7851758, 106.6867243];
+                                            <?php endif; ?>
                                         </script>
 
                                     </div>
 
                                 </div>
-                                <script>
-//                                    function updateMap()
-//                                    {
-//                                        LoadMap('map-canvas-project', 18, locations);
-//                                    }
-//                                    jQuery(document).ready(function () {
-//                                        updateMap();
-//                                    });
+                                <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=<?php echo GG_API_KEY; ?>"></script>
+                                <script type="text/javascript" src="<?php echo BASE_URL; ?>/templates/js/map.js"></script>
+                                <script type="text/javascript">
+                                    function updateMap()
+                                    {
+                                      LoadMap('map-canvas-project', 18, locations);
+                                    }
+                                    jQuery( document ).ready(function() {
+                                        updateMap();
+                                    });
                                 </script>
 
 

@@ -48,7 +48,7 @@
                     </div>
                     <div class="form-group">
                         <label>Vị trí:</label>
-                        <textarea name="txtTintuc" class="form-control" rows="10"></textarea>
+                        <input type="text" class="form-control" name="txtVitri" />
                     </div>
                     <div class="form-group">
                         <label>Thể loại: </label>
